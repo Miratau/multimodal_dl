@@ -1,0 +1,22 @@
+include: configs/base.yaml
+vit:
+  backbone_choices: ["vit_small_patch16_224"]
+  img_size: 224
+  epochs: 3
+  patience: 1
+  batch_size_choices: [32]
+  label_smoothing: 0.1
+  optimizer: adamw
+  scheduler: cosine
+  amp: true
+  tune:
+    n_trials: 2
+    params:
+      backbone: ["vit_small_patch16_224"]
+      lr_head: {loguniform: [0.0003, 0.0015]}
+      lr_backbone_mult: [0.25]
+      weight_decay: {loguniform: [0.00005, 0.0005]}
+      batch_size: [32]
+      mixup: [0.0]
+      cutmix: [0.0]
+

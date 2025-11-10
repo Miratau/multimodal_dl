@@ -1,0 +1,13 @@
+include: configs/base.yaml
+fusion:
+  epochs: 3
+  patience: 1
+  tune:
+    n_trials: 2
+    params:
+      hidden_dim: [128, 256, 512]
+      num_layers: [1, 2]
+      dropout: [0.2]
+      lr: {loguniform: [0.00005, 0.01]}
+      use_logits_vs_embed: ["logits", "embeddings"]
+
