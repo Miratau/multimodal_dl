@@ -1,0 +1,10 @@
+include: configs/base.yaml
+fusion_attention:
+  epochs: 50
+  patience: 10
+  batch_size: 256
+  hidden_dim: 128
+  dropout: 0.4
+  lr: 0.0005
+  weight_decay: 0.0001
+

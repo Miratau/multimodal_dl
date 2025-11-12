@@ -15,8 +15,7 @@ from src.models.vit_module import create_vit, split_parameters
 from src.training.engine import train_one_epoch, validate
 from src.utils.seed import set_seed
 from src.utils.transforms import build_train_transforms, build_val_transforms
-
-from multimodal_dl.utils import get_train_val_metadata
+from scripts.utils import get_train_val_metadata
 
 
 def _load_config(path: str) -> Dict[str, Any]:
@@ -76,7 +75,7 @@ def _train_vit(train_loader, val_loader, cfg: Dict[str, Any], num_classes: int, 
         weight_decay=vit_cfg["weight_decay"],
     )
     criterion = nn.CrossEntropyLoss(label_smoothing=vit_cfg["label_smoothing"])
-    scaler = torch.cuda.amp.GradScaler(enabled=vit_cfg.get("amp", True))
+    scaler = torch.amp.GradScaler('cuda', enabled=vit_cfg.get("amp", True))
 
     best_state = None
     best_metrics = {"macro_f1": -1.0, "val_loss": float("inf")}

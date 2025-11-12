@@ -5,7 +5,7 @@ from typing import Dict, Tuple
 import numpy as np
 import torch
 from torch import nn
-from torch.cuda.amp import GradScaler, autocast
+from torch.amp import GradScaler
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
@@ -27,7 +27,7 @@ def train_one_epoch(
         targets = targets.to(device, non_blocking=True)
         optimizer.zero_grad(set_to_none=True)
         if use_amp:
-            with autocast():
+            with torch.amp.autocast('cuda'):
                 logits = model(images)
                 loss = criterion(logits, targets)
             scaler.scale(loss).backward()

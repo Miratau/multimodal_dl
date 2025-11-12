@@ -13,8 +13,7 @@ import torch
 
 from src.data.ham10000 import build_tabular_preprocessor, make_label_mapping
 from src.utils.seed import set_seed
-
-from multimodal_dl.utils import get_train_val_metadata
+from scripts.utils import get_train_val_metadata
 
 
 def _load_config(path: str) -> Dict[str, Any]:
@@ -44,8 +43,8 @@ def _prepare_features(
     feature_cols = [c for c in train_df.columns if c not in exclude_cols]
 
     preproc = build_tabular_preprocessor(train_df[feature_cols])
-    X_train = preproc.transform(train_df[feature_cols])
-    X_val = preproc.transform(val_df[feature_cols])
+    X_train = preproc.fit_transform(train_df[feature_cols])  # Fit on train, then transform
+    X_val = preproc.transform(val_df[feature_cols])  # Only transform val (using train stats)
 
     y_train = train_df["label_idx"].values
     y_val = val_df["label_idx"].values

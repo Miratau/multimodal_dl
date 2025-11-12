@@ -15,6 +15,8 @@ from typing import List, Optional
 
 base_transforms = A.Compose([
     A.Resize(224, 224),
+    A.Normalize(mean=(0.485, 0.456, 0.406),
+                std=(0.229, 0.224, 0.225)),
     ToTensorV2(),
 ])
 
@@ -54,8 +56,8 @@ AUG_BANK = [
 ]
 
 REQUIRED_COLS = ["image_id","dx","age","sex","localization"]
-AUGMENTED_PATH = "/l/users/abzal.nurgazy/ham10000/augmented_images"
-DATA_PATH = "/l/users/abzal.nurgazy/ham10000/2"
+AUGMENTED_PATH = "/home/mirat.aubakirov/dl_project/data/processed/augmented_images"
+DATA_PATH = "/home/mirat.aubakirov/dl_project/data/raw/ham10000"
 DX_CLASSES = ["akiec","bcc","bkl","df","mel","nv","vasc"]
 DX2IDX = {c:i for i,c in enumerate(DX_CLASSES)}
 
@@ -390,22 +392,51 @@ def get_train_val_metadata(
     keep_augmented_in_val: bool = False,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """
-    Produce deterministic train/val metadata splits. Augmented images are kept in the training
-    split by default to avoid leakage.
+    Produce deterministic train/val metadata splits WITH LESION GROUPING.
+    Ensures same lesion never appears in both train and val (prevents data leakage).
+    Augmented images are kept in the training split by default.
     """
     df = get_merged_metadata(data_path=data_path, augmented_path=augmented_path)
     df["dx"] = df["dx"].astype(str)
     df["image_id"] = df["image_id"].astype(str)
+    
+    # Separate base and augmented images
     is_aug = df["image_id"].str.contains("_aug_", na=False)
     base_df = df[~is_aug].reset_index(drop=True)
     aug_df = df[is_aug].reset_index(drop=True)
 
-    train_base, val_df = train_test_split(
-        base_df,
-        test_size=test_size,
-        stratify=base_df["dx"],
-        random_state=seed,
-    )
+    # GROUP BY LESION_ID to prevent data leakage
+    if "lesion_id" in base_df.columns and base_df["lesion_id"].notna().any():
+        # Group by lesion to ensure same lesion doesn't appear in train and val
+        lesion_ids = base_df["lesion_id"].astype(str).fillna("unknown")
+        unique_lesions = lesion_ids.unique()
+        
+        # Get stratification labels (one per lesion)
+        lesion_to_dx = base_df.groupby(lesion_ids)["dx"].first()
+        stratify_labels = lesion_to_dx.reindex(unique_lesions).values
+        
+        # Split lesions, not individual images!
+        train_lesions, val_lesions = train_test_split(
+            unique_lesions,
+            test_size=test_size,
+            stratify=stratify_labels,
+            random_state=seed,
+        )
+        
+        # Get all images belonging to train/val lesions
+        train_base = base_df[lesion_ids.isin(train_lesions)].reset_index(drop=True)
+        val_df = base_df[lesion_ids.isin(val_lesions)].reset_index(drop=True)
+    else:
+        # Fallback if no lesion_id available (shouldn't happen for HAM10000)
+        print("WARNING: No lesion_id found, splitting by images (potential data leakage!)")
+        train_base, val_df = train_test_split(
+            base_df,
+            test_size=test_size,
+            stratify=base_df["dx"],
+            random_state=seed,
+        )
+    
+    # Add augmented images to train only (prevents augmentation leakage)
     if keep_augmented_in_val:
         val_aug = aug_df.copy()
         train_df = train_base
@@ -415,15 +446,6 @@ def get_train_val_metadata(
 
     return train_df.reset_index(drop=True), val_df.reset_index(drop=True)
 
-
-# aug_paths, aug_md = augment_data(
-#     image_paths=train_paths,
-#     save_path=AUGMENTED_PATH,
-#     data_root=DATA_PATH,
-#     multipliers=MULTIPLIERS,
-# )
-
-# print(len(aug_paths), "augmented images saved")
 
 
 if __name__ == "__main__":
