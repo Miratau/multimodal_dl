@@ -1,20 +1,17 @@
 import argparse
+import json
 from pathlib import Path
 from typing import Any, Dict
 
 import numpy as np
-import optuna
-import pandas as pd
 import torch
 import torch.nn as nn
 import yaml
 from sklearn.metrics import f1_score
-from sklearn.model_selection import StratifiedKFold
 from torch.utils.data import DataLoader, TensorDataset
 
 from src.models.fusion_mlp import FusionMLP
 from src.utils.seed import set_seed
-from src.utils.io import save_json
 
 
 def _load_config(path: str) -> Dict[str, Any]:
@@ -29,93 +26,172 @@ def _load_config(path: str) -> Dict[str, Any]:
     return cfg
 
 
-def build_dataset(oof_paths, labels: np.ndarray) -> torch.utils.data.Dataset:
-    feats = [np.load(p) for p in oof_paths]
-    X = np.concatenate(feats, axis=1).astype(np.float32)
-    y = labels.astype(np.int64)
-    return TensorDataset(torch.from_numpy(X), torch.from_numpy(y))
+def _load_features(base_dir: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    tab_dir = base_dir / "tabnet"
+    vit_dir = base_dir / "vit"
+    required = [
+        tab_dir / "train_proba.npy",
+        tab_dir / "val_proba.npy",
+        tab_dir / "train_labels.npy",
+        tab_dir / "val_labels.npy",
+        vit_dir / "train_proba.npy",
+        vit_dir / "val_proba.npy",
+    ]
+    for path in required:
+        if not path.exists():
+            raise FileNotFoundError(f"Expected file not found: {path}")
+
+    tab_train = np.load(tab_dir / "train_proba.npy")
+    tab_val = np.load(tab_dir / "val_proba.npy")
+    train_labels = np.load(tab_dir / "train_labels.npy").astype(np.int64)
+    val_labels = np.load(tab_dir / "val_labels.npy").astype(np.int64)
+    vit_train = np.load(vit_dir / "train_proba.npy")
+    vit_val = np.load(vit_dir / "val_proba.npy")
+
+    train_feats = np.concatenate([tab_train, vit_train], axis=1).astype(np.float32)
+    val_feats = np.concatenate([tab_val, vit_val], axis=1).astype(np.float32)
+    return train_feats, val_feats, train_labels, val_labels
 
 
-def cv_score(params: Dict[str, Any], X: np.ndarray, y: np.ndarray, num_classes: int, seed: int = 2025) -> float:
-    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=seed)
-    scores = []
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    for tr_idx, va_idx in skf.split(X, y):
-        X_tr, X_va = X[tr_idx], X[va_idx]
-        y_tr, y_va = y[tr_idx], y[va_idx]
-        model = FusionMLP(input_dim=X.shape[1], num_classes=num_classes, hidden_dim=params["hidden_dim"], num_layers=params["num_layers"], dropout=params["dropout"]).to(device)
-        optimizer = torch.optim.AdamW(model.parameters(), lr=params["lr"], weight_decay=1e-4)
-        criterion = nn.CrossEntropyLoss()
-        dl_tr = DataLoader(TensorDataset(torch.from_numpy(X_tr), torch.from_numpy(y_tr.astype(np.int64))), batch_size=256, shuffle=True)
-        dl_va = DataLoader(TensorDataset(torch.from_numpy(X_va), torch.from_numpy(y_va.astype(np.int64))), batch_size=256, shuffle=False)
-        best_f1 = -1.0
-        epochs_no_improve = 0
-        for epoch in range(50):
-            model.train()
-            for xb, yb in dl_tr:
+def _build_loaders(
+    X_train: np.ndarray,
+    y_train: np.ndarray,
+    X_val: np.ndarray,
+    y_val: np.ndarray,
+    batch_size: int,
+) -> tuple[DataLoader, DataLoader]:
+    train_dataset = TensorDataset(torch.from_numpy(X_train), torch.from_numpy(y_train))
+    val_dataset = TensorDataset(torch.from_numpy(X_val), torch.from_numpy(y_val))
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
+    return train_loader, val_loader
+
+
+def _train_fusion(
+    train_loader: DataLoader,
+    val_loader: DataLoader,
+    input_dim: int,
+    num_classes: int,
+    cfg: Dict[str, Any],
+) -> tuple[FusionMLP, Dict[str, float], np.ndarray, np.ndarray]:
+    fusion_cfg = cfg["fusion"]
+    device = torch.device(cfg.get("device", "cuda" if torch.cuda.is_available() else "cpu"))
+    model = FusionMLP(
+        input_dim=input_dim,
+        num_classes=num_classes,
+        hidden_dim=fusion_cfg["hidden_dim"],
+        num_layers=fusion_cfg["num_layers"],
+        dropout=fusion_cfg["dropout"],
+    ).to(device)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=fusion_cfg["lr"], weight_decay=1e-4)
+    criterion = nn.CrossEntropyLoss()
+
+    best_f1 = -1.0
+    best_state = None
+    best_preds = None
+    best_proba = None
+    no_improve = 0
+
+    for epoch in range(fusion_cfg["epochs"]):
+        model.train()
+        epoch_loss = 0.0
+        for xb, yb in train_loader:
+            xb = xb.to(device)
+            yb = yb.to(device, dtype=torch.long)
+            optimizer.zero_grad(set_to_none=True)
+            logits = model(xb)
+            loss = criterion(logits, yb)
+            loss.backward()
+            optimizer.step()
+            epoch_loss += loss.item() * xb.size(0)
+        epoch_loss /= len(train_loader.dataset)
+
+        model.eval()
+        all_proba = []
+        all_true = []
+        with torch.no_grad():
+            for xb, yb in val_loader:
                 xb = xb.to(device)
-                yb = yb.to(device, dtype=torch.long)
-                optimizer.zero_grad(set_to_none=True)
                 logits = model(xb)
-                loss = criterion(logits, yb)
-                loss.backward()
-                optimizer.step()
-            # val
-            model.eval()
-            all_pred = []
-            all_true = []
-            with torch.no_grad():
-                for xb, yb in dl_va:
-                    xb = xb.to(device)
-                    logits = model(xb)
-                    pred = logits.argmax(dim=1).cpu().numpy()
-                    all_pred.append(pred)
-                    all_true.append(yb.numpy())
-            f1 = f1_score(np.concatenate(all_true), np.concatenate(all_pred), average="macro")
-            if f1 > best_f1:
-                best_f1 = f1
-                epochs_no_improve = 0
-            else:
-                epochs_no_improve += 1
-            if epochs_no_improve >= 10:
-                break
-        scores.append(best_f1)
-    return float(np.mean(scores))
+                proba = torch.softmax(logits, dim=1).cpu().numpy()
+                all_proba.append(proba)
+                all_true.append(yb.numpy())
+        proba_val = np.concatenate(all_proba)
+        y_val = np.concatenate(all_true)
+        preds = proba_val.argmax(axis=1)
+        macro_f1 = f1_score(y_val, preds, average="macro")
+        print(f"[Fusion] Epoch {epoch + 1}/{fusion_cfg['epochs']} | Train loss: {epoch_loss:.4f} | Val macro F1: {macro_f1:.4f}")
+
+        if macro_f1 > best_f1:
+            best_f1 = macro_f1
+            best_state = model.state_dict()
+            best_preds = preds
+            best_proba = proba_val
+            no_improve = 0
+        else:
+            no_improve += 1
+        if no_improve >= fusion_cfg["patience"]:
+            print("[Fusion] Early stopping triggered.")
+            break
+
+    if best_state is not None:
+        model.load_state_dict(best_state)
+    if best_proba is None or best_preds is None:
+        model.eval()
+        all_proba = []
+        all_true = []
+        with torch.no_grad():
+            for xb, yb in val_loader:
+                xb = xb.to(device)
+                logits = model(xb)
+                proba = torch.softmax(logits, dim=1).cpu().numpy()
+                all_proba.append(proba)
+                all_true.append(yb.numpy())
+        best_proba = np.concatenate(all_proba)
+        y_val = np.concatenate(all_true)
+        best_preds = best_proba.argmax(axis=1)
+        best_f1 = f1_score(y_val, best_preds, average="macro")
+
+    metrics = {"macro_f1": float(best_f1)}
+    return model, metrics, best_proba, best_preds
+
+
+def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
+    if tune:
+        print("[WARN] Tuning disabled; proceeding with fixed Fusion parameters.")
+    set_seed(cfg.get("seed", 2025))
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    base_dir = Path(cfg["logging"]["out_dir"])
+    X_train, X_val, y_train, y_val = _load_features(base_dir)
+    train_loader, val_loader = _build_loaders(
+        X_train,
+        y_train,
+        X_val,
+        y_val,
+        batch_size=cfg["fusion"]["batch_size"],
+    )
+    num_classes = int(max(y_train.max(), y_val.max()) + 1)
+    model, metrics, proba_val, preds_val = _train_fusion(
+        train_loader,
+        val_loader,
+        input_dim=X_train.shape[1],
+        num_classes=num_classes,
+        cfg=cfg,
+    )
+
+    torch.save(model.state_dict(), out_dir / "model_best.pth")
+    with open(out_dir / "metrics.json", "w") as f:
+        json.dump(metrics, f, indent=2)
+    np.save(out_dir / "val_proba.npy", proba_val.astype(np.float32))
+    np.save(out_dir / "val_preds.npy", preds_val.astype(np.int64))
+    np.save(out_dir / "val_labels.npy", y_val.astype(np.int64))
 
 
 def main(config_path: str, tune: bool) -> int:
     cfg = _load_config(config_path)
-    set_seed(cfg.get("seed", 2025))
     out_dir = Path(cfg["logging"]["out_dir"]) / "fusion"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    # Load OOF features; expect these files
-    tabnet_oof = Path(cfg["logging"]["out_dir"]) / "tabnet" / "oof_proba.npy"
-    vit_oof = Path(cfg["logging"]["out_dir"]) / "vit" / "oof_proba.npy"
-    if not tabnet_oof.exists() or not vit_oof.exists():
-        raise FileNotFoundError("Expected OOF files not found. Run modal trainings first to produce OOF predictions.")
-    X_tab = np.load(tabnet_oof)
-    X_vit = np.load(vit_oof)
-    X = np.concatenate([X_tab, X_vit], axis=1).astype(np.float32)
-    # Labels from metadata; assume same ordering during OOF creation
-    df = pd.read_csv(cfg["data"]["metadata_csv"])
-    y = df[cfg["data"]["target_col"]].astype("category").cat.codes.astype(np.int64).values
-    num_classes = int(df[cfg["data"]["target_col"]].nunique())
-
-    if tune:
-        def objective(trial: optuna.Trial) -> float:
-            hidden_dim = trial.suggest_categorical("hidden_dim", [128, 256, 512])
-            num_layers = trial.suggest_categorical("num_layers", [1, 2])
-            dropout = trial.suggest_categorical("dropout", [0.1, 0.2, 0.3, 0.5])
-            lr = trial.suggest_float("lr", 5e-5, 1e-2, log=True)
-            params = {"hidden_dim": hidden_dim, "num_layers": num_layers, "dropout": dropout, "lr": lr}
-            score = cv_score(params, X, y, num_classes, seed=cfg.get("seed", 2025))
-            return score
-
-        study = optuna.create_study(direction="maximize")
-        study.optimize(objective, n_trials=cfg["fusion"]["tune"]["n_trials"], show_progress_bar=True)
-        save_json({"best_params": study.best_trial.params, "best_value": study.best_value}, str(out_dir / "study_best.json"))
-    else:
-        print("Non-tuning training for fusion not yet implemented.")
+    run_training(cfg, out_dir, tune=tune)
     return 0
 
 
