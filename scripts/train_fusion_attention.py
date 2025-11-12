@@ -30,7 +30,7 @@ def _load_config(path: str) -> Dict[str, Any]:
     return cfg
 
 
-def _load_features(base_dir: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+def _load_features(base_dir: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """Load pre-computed TabNet and ViT probabilities"""
     tab_dir = base_dir / "tabnet"
     vit_dir = base_dir / "vit"
@@ -38,10 +38,13 @@ def _load_features(base_dir: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray, 
     required = [
         tab_dir / "train_proba.npy",
         tab_dir / "val_proba.npy",
+        tab_dir / "test_proba.npy",
         tab_dir / "train_labels.npy",
         tab_dir / "val_labels.npy",
+        tab_dir / "test_labels.npy",
         vit_dir / "train_proba.npy",
         vit_dir / "val_proba.npy",
+        vit_dir / "test_proba.npy",
     ]
     for path in required:
         if not path.exists():
@@ -49,16 +52,19 @@ def _load_features(base_dir: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray, 
 
     tab_train = np.load(tab_dir / "train_proba.npy")
     tab_val = np.load(tab_dir / "val_proba.npy")
+    tab_test = np.load(tab_dir / "test_proba.npy")
     train_labels = np.load(tab_dir / "train_labels.npy").astype(np.int64)
     val_labels = np.load(tab_dir / "val_labels.npy").astype(np.int64)
+    test_labels = np.load(tab_dir / "test_labels.npy").astype(np.int64)
     vit_train = np.load(vit_dir / "train_proba.npy")
     vit_val = np.load(vit_dir / "val_proba.npy")
+    vit_test = np.load(vit_dir / "test_proba.npy")
 
     # Concatenate: [TabNet_proba, ViT_proba]
     train_feats = np.concatenate([tab_train, vit_train], axis=1).astype(np.float32)
     val_feats = np.concatenate([tab_val, vit_val], axis=1).astype(np.float32)
-    
-    return train_feats, val_feats, train_labels, val_labels
+    test_feats = np.concatenate([tab_test, vit_test], axis=1).astype(np.float32)
+    return train_feats, val_feats, test_feats, train_labels, val_labels, test_labels
 
 
 def _build_loaders(
@@ -208,7 +214,7 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     base_dir = Path(cfg["logging"]["out_dir"])
-    X_train, X_val, y_train, y_val = _load_features(base_dir)
+    X_train, X_val, X_test, y_train, y_val, y_test = _load_features(base_dir)
     
     print(f"[Attention Fusion] Train features shape: {X_train.shape}")
     print(f"[Attention Fusion] Val features shape: {X_val.shape}")
@@ -230,19 +236,26 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
         cfg=cfg,
     )
 
+    # Evaluate on test
+    device = torch.device(cfg.get("device", "cuda" if torch.cuda.is_available() else "cpu"))
+    test_dataset = TensorDataset(torch.from_numpy(X_test), torch.from_numpy(y_test))
+    test_loader = DataLoader(test_dataset, batch_size=cfg["fusion_attention"]["batch_size"], shuffle=False)
+    model.eval()
+    all_proba = []
+    with torch.no_grad():
+        for xb, yb in test_loader:
+            xb = xb.to(device)
+            logits = model(xb)
+            proba = torch.softmax(logits, dim=1).cpu().numpy()
+            all_proba.append(proba)
+    proba_test = np.concatenate(all_proba)
+    preds_test = proba_test.argmax(axis=1)
+    metrics["macro_f1_test"] = float(f1_score(y_test, preds_test, average="macro"))
+
     # Print final results
     print(f"\n[Attention Fusion] Training completed!")
-    print(f"[Attention Fusion] Macro F1 on validation: {metrics['macro_f1']:.4f}")
-    
-    # Attention weight analysis
-    avg_tabnet_attn = attention_weights[:, 0].mean()
-    avg_vit_attn = attention_weights[:, 1].mean()
-    print(f"\n[Attention Fusion] Average attention weights:")
-    print(f"  TabNet: {avg_tabnet_attn:.4f} ({avg_tabnet_attn*100:.1f}%)")
-    print(f"  ViT:    {avg_vit_attn:.4f} ({avg_vit_attn*100:.1f}%)")
-    
-    print("\n[Attention Fusion] Validation classification report:")
-    print(classification_report(y_val, preds_val))
+    print("\n[Attention Fusion] Test classification report:")
+    print(classification_report(y_test, preds_test))
 
     # Save artifacts
     torch.save(model.state_dict(), out_dir / "model_best.pth")
@@ -252,10 +265,13 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
     np.save(out_dir / "val_preds.npy", preds_val.astype(np.int64))
     np.save(out_dir / "val_labels.npy", y_val.astype(np.int64))
     np.save(out_dir / "attention_weights.npy", attention_weights.astype(np.float32))
+    np.save(out_dir / "test_proba.npy", proba_test.astype(np.float32))
+    np.save(out_dir / "test_preds.npy", preds_test.astype(np.int64))
+    np.save(out_dir / "test_labels.npy", y_test.astype(np.int64))
     
     print(f"\n[Attention Fusion] Artifacts saved to {out_dir}")
     print(f"  - Model checkpoint")
-    print(f"  - Predictions and labels")
+    print(f"  - Val/test predictions and labels")
     print(f"  - Attention weights (for analysis)")
 
 

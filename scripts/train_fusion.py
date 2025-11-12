@@ -32,10 +32,13 @@ def _load_features(base_dir: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray, 
     required = [
         tab_dir / "train_proba.npy",
         tab_dir / "val_proba.npy",
+        tab_dir / "test_proba.npy",
         tab_dir / "train_labels.npy",
         tab_dir / "val_labels.npy",
+        tab_dir / "test_labels.npy",
         vit_dir / "train_proba.npy",
         vit_dir / "val_proba.npy",
+        vit_dir / "test_proba.npy",
     ]
     for path in required:
         if not path.exists():
@@ -43,14 +46,18 @@ def _load_features(base_dir: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray, 
 
     tab_train = np.load(tab_dir / "train_proba.npy")
     tab_val = np.load(tab_dir / "val_proba.npy")
+    tab_test = np.load(tab_dir / "test_proba.npy")
     train_labels = np.load(tab_dir / "train_labels.npy").astype(np.int64)
     val_labels = np.load(tab_dir / "val_labels.npy").astype(np.int64)
+    test_labels = np.load(tab_dir / "test_labels.npy").astype(np.int64)
     vit_train = np.load(vit_dir / "train_proba.npy")
     vit_val = np.load(vit_dir / "val_proba.npy")
+    vit_test = np.load(vit_dir / "test_proba.npy")
 
     train_feats = np.concatenate([tab_train, vit_train], axis=1).astype(np.float32)
     val_feats = np.concatenate([tab_val, vit_val], axis=1).astype(np.float32)
-    return train_feats, val_feats, train_labels, val_labels
+    test_feats = np.concatenate([tab_test, vit_test], axis=1).astype(np.float32)
+    return train_feats, val_feats, test_feats, train_labels, val_labels, test_labels
 
 
 def _build_loaders(
@@ -163,7 +170,7 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     base_dir = Path(cfg["logging"]["out_dir"])
-    X_train, X_val, y_train, y_val = _load_features(base_dir)
+    X_train, X_val, X_test, y_train, y_val, y_test = _load_features(base_dir)
     train_loader, val_loader = _build_loaders(
         X_train,
         y_train,
@@ -180,11 +187,28 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
         cfg=cfg,
     )
 
-    # Print final results
+    # Evaluate on test
+    model.eval()
+    device = torch.device(cfg.get("device", "cuda" if torch.cuda.is_available() else "cpu"))
+    test_dataset = TensorDataset(torch.from_numpy(X_test), torch.from_numpy(y_test))
+    test_loader = DataLoader(test_dataset, batch_size=cfg["fusion"]["batch_size"], shuffle=False)
+    all_proba = []
+    all_true = []
+    with torch.no_grad():
+        for xb, yb in test_loader:
+            xb = xb.to(device)
+            logits = model(xb)
+            proba = torch.softmax(logits, dim=1).cpu().numpy()
+            all_proba.append(proba)
+            all_true.append(yb.numpy())
+    proba_test = np.concatenate(all_proba)
+    y_test_np = np.concatenate(all_true)
+    preds_test = proba_test.argmax(axis=1)
+    metrics["macro_f1_test"] = float(f1_score(y_test_np, preds_test, average="macro"))
+
     print(f"\n[Fusion] Training completed!")
-    print(f"[Fusion] Macro F1 on validation: {metrics['macro_f1']:.4f}")
-    print("[Fusion] Validation classification report:")
-    print(classification_report(y_val, preds_val))
+    print("[Fusion] Test classification report:")
+    print(classification_report(y_test_np, preds_test))
 
     torch.save(model.state_dict(), out_dir / "model_best.pth")
     with open(out_dir / "metrics.json", "w") as f:
@@ -192,6 +216,9 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
     np.save(out_dir / "val_proba.npy", proba_val.astype(np.float32))
     np.save(out_dir / "val_preds.npy", preds_val.astype(np.int64))
     np.save(out_dir / "val_labels.npy", y_val.astype(np.int64))
+    np.save(out_dir / "test_proba.npy", proba_test.astype(np.float32))
+    np.save(out_dir / "test_preds.npy", preds_test.astype(np.int64))
+    np.save(out_dir / "test_labels.npy", y_test_np.astype(np.int64))
 
 
 def main(config_path: str, tune: bool) -> int:

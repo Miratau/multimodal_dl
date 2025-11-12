@@ -13,7 +13,7 @@ import torch
 
 from src.data.ham10000 import build_tabular_preprocessor, make_label_mapping
 from src.utils.seed import set_seed
-from scripts.utils import get_train_val_metadata
+from scripts.utils import get_train_val_test_metadata
 
 
 def _load_config(path: str) -> Dict[str, Any]:
@@ -137,27 +137,39 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
         out_dir.mkdir(parents=True, exist_ok=True)
 
         print("[TabNet] Loading and splitting metadata...", flush=True)
-        test_size = cfg["data"].get("test_size", 0.2)
-        train_df, val_df = get_train_val_metadata(
+        val_size = cfg["data"].get("val_size", 0.1)
+        test_size = cfg["data"].get("test_size", 0.1)
+        train_df, val_df, test_df = get_train_val_test_metadata(
+            val_size=val_size,
             test_size=test_size,
             seed=cfg.get("seed", 2025),
         )
-        print(f"[TabNet] Train samples: {len(train_df)}, Val samples: {len(val_df)}", flush=True)
+        print(f"[TabNet] Train samples: {len(train_df)}, Val samples: {len(val_df)}, Test samples: {len(test_df)}", flush=True)
         target_col = cfg["data"]["target_col"]
 
         print("[TabNet] Preparing features and preprocessing...", flush=True)
         X_train, X_val, y_train, y_val, label_map, preproc = _prepare_features(train_df, val_df, target_col)
-        print(f"[TabNet] Feature dimensions: train={X_train.shape}, val={X_val.shape}", flush=True)
+        # Prepare test using train mapping and preprocessor
+        test_df_enc = test_df.copy()
+        test_df_enc["label_idx"] = test_df_enc[target_col].map(label_map).astype(int)
+        exclude_cols = {target_col, "label_idx", "image_path", "image_id"}
+        feature_cols = [c for c in test_df_enc.columns if c not in exclude_cols]
+        X_test = preproc.transform(test_df_enc[feature_cols])
+        y_test = test_df_enc["label_idx"].values
+        print(f"[TabNet] Feature dimensions: train={X_train.shape}, val={X_val.shape}, test={X_test.shape}", flush=True)
         
         print("[TabNet] Training model...", flush=True)
         clf, proba_train, proba_val, metrics = _train_tabnet(X_train, y_train, X_val, y_val, cfg)
         preds_val = proba_val.argmax(axis=1)
 
+        # Evaluate on test set
         print(f"\n[TabNet] Training completed!", flush=True)
-        print(f"[TabNet] Macro F1 on validation: {metrics['macro_f1']:.4f}", flush=True)
-        print("[TabNet] Classification report:", flush=True)
-        report = classification_report(y_val, preds_val, output_dict=False)
-        print(report, flush=True)
+        print("[TabNet] Generating predictions on test set...", flush=True)
+        proba_test = clf.predict_proba(X_test).astype(np.float32)
+        preds_test = proba_test.argmax(axis=1)
+        metrics["macro_f1_test"] = float(f1_score(y_test, preds_test, average="macro"))
+        print("[TabNet] Test classification report:", flush=True)
+        print(classification_report(y_test, preds_test, output_dict=False), flush=True)
 
         # Persist artifacts
         print("[TabNet] Saving artifacts...", flush=True)
@@ -182,12 +194,16 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
         print("[TabNet] Saving probabilities and labels...", flush=True)
         np.save(out_dir / "train_proba.npy", proba_train)
         np.save(out_dir / "val_proba.npy", proba_val)
+        np.save(out_dir / "test_proba.npy", proba_test)
         np.save(out_dir / "train_labels.npy", y_train.astype(np.int64))
         np.save(out_dir / "val_labels.npy", y_val.astype(np.int64))
+        np.save(out_dir / "test_labels.npy", y_test.astype(np.int64))
+        np.save(out_dir / "test_preds.npy", preds_test.astype(np.int64))
 
         print("[TabNet] Saving metadata CSVs...", flush=True)
         train_df.to_csv(out_dir / "train_metadata.csv", index=False)
         val_df.to_csv(out_dir / "val_metadata.csv", index=False)
+        test_df.to_csv(out_dir / "test_metadata.csv", index=False)
         
         print(f"[TabNet] All artifacts saved to {out_dir}", flush=True)
         print("[TabNet] Done!", flush=True)

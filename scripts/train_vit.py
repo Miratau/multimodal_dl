@@ -15,7 +15,7 @@ from src.models.vit_module import create_vit, split_parameters
 from src.training.engine import train_one_epoch, validate
 from src.utils.seed import set_seed
 from src.utils.transforms import build_train_transforms, build_val_transforms
-from scripts.utils import get_train_val_metadata
+from scripts.utils import get_train_val_test_metadata
 
 
 def _load_config(path: str) -> Dict[str, Any]:
@@ -123,12 +123,18 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
     set_seed(cfg.get("seed", 2025))
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    train_meta, val_meta = get_train_val_metadata(
-        test_size=cfg["data"].get("test_size", 0.2),
+    val_size = cfg["data"].get("val_size", 0.1)
+    test_size = cfg["data"].get("test_size", 0.1)
+    train_meta, val_meta, test_meta = get_train_val_test_metadata(
+        val_size=val_size,
+        test_size=test_size,
         seed=cfg.get("seed", 2025),
     )
     target_col = cfg["data"]["target_col"]
     train_enc, val_enc, label_map, num_classes = _prepare_metadata(train_meta, val_meta, target_col)
+    # Encode test using train label_map
+    test_enc = test_meta.copy()
+    test_enc[target_col] = test_enc[target_col].map(label_map).astype(int)
 
     device = torch.device(cfg.get("device", "cuda" if torch.cuda.is_available() else "cpu"))
     train_loader, train_eval_loader, val_loader = _build_dataloaders(train_enc, val_enc, cfg)
@@ -139,11 +145,21 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
         val_loss, proba_val, val_labels = validate(model, val_loader, nn.CrossEntropyLoss(), device)
         metrics["val_loss"] = float(val_loss)
 
-    val_preds = proba_val.argmax(axis=1)
-    final_macro = f1_score(val_labels, val_preds, average="macro")
-    metrics["macro_f1"] = float(final_macro)
-    print("[ViT] Validation classification report:")
-    print(classification_report(val_labels, val_preds))
+    # Build test loader and evaluate on test set
+    img_size = cfg["vit"]["img_size"]
+    target = cfg["data"]["target_col"]
+    val_tf = build_val_transforms(img_size)
+    num_classes_eval = len(sorted(train_enc[target].unique()))
+    identity_map = {i: i for i in range(num_classes_eval)}
+    test_dataset = Ham10000Dataset(test_enc, class_to_idx=identity_map, image_transform=val_tf, use_tabular=False, target_col=target)
+    test_loader = DataLoader(test_dataset, batch_size=cfg["vit"]["batch_size"], shuffle=False, num_workers=cfg.get("num_workers", 4), pin_memory=True)
+    test_loss, proba_test, test_labels = validate(model, test_loader, nn.CrossEntropyLoss(), device)
+    test_preds = proba_test.argmax(axis=1)
+    test_macro = f1_score(test_labels, test_preds, average="macro")
+    metrics["macro_f1_test"] = float(test_macro)
+    metrics["test_loss"] = float(test_loss)
+    print("[ViT] Test classification report:")
+    print(classification_report(test_labels, test_preds))
 
     proba_train, y_train = _collect_logits(model, train_eval_loader, device)
 
@@ -156,11 +172,15 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
 
     np.save(out_dir / "train_proba.npy", proba_train.astype(np.float32))
     np.save(out_dir / "val_proba.npy", proba_val.astype(np.float32))
+    np.save(out_dir / "test_proba.npy", proba_test.astype(np.float32))
     np.save(out_dir / "train_labels.npy", y_train.astype(np.int64))
     np.save(out_dir / "val_labels.npy", val_labels)
+    np.save(out_dir / "test_labels.npy", test_labels.astype(np.int64))
+    np.save(out_dir / "test_preds.npy", test_preds.astype(np.int64))
 
     train_meta.to_csv(out_dir / "train_metadata.csv", index=False)
     val_meta.to_csv(out_dir / "val_metadata.csv", index=False)
+    test_meta.to_csv(out_dir / "test_metadata.csv", index=False)
 
 
 def main(config_path: str, tune: bool) -> int:

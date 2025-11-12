@@ -448,6 +448,85 @@ def get_train_val_metadata(
 
 
 
+def get_train_val_test_metadata(
+    data_path: str = DATA_PATH,
+    augmented_path: str = AUGMENTED_PATH,
+    val_size: float = 0.1,
+    test_size: float = 0.1,
+    seed: int = 42,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """
+    Create 80/10/10 (train/val/test) split with lesion grouping.
+    - Validation and test contain ONLY base images (no augmented).
+    - Augmented images are included ONLY in the training split.
+    """
+    if not (0.0 < val_size < 1.0 and 0.0 < test_size < 1.0):
+        raise ValueError("val_size and test_size must be in (0, 1)")
+    if val_size + test_size >= 1.0:
+        raise ValueError("val_size + test_size must be < 1")
+
+    df = get_merged_metadata(data_path=data_path, augmented_path=augmented_path)
+    df["dx"] = df["dx"].astype(str)
+    df["image_id"] = df["image_id"].astype(str)
+
+    # Separate base and augmented images
+    is_aug = df["image_id"].str.contains("_aug_", na=False)
+    base_df = df[~is_aug].reset_index(drop=True)
+    aug_df = df[is_aug].reset_index(drop=True)
+
+    # Group by lesion to avoid leakage
+    rng_seed = seed
+    if "lesion_id" in base_df.columns and base_df["lesion_id"].notna().any():
+        lesion_ids = base_df["lesion_id"].astype(str).fillna("unknown")
+        unique_lesions = lesion_ids.unique()
+        # One label per lesion for stratification
+        lesion_to_dx = base_df.groupby(lesion_ids)["dx"].first()
+        stratify_labels = lesion_to_dx.reindex(unique_lesions).values
+
+        # First split: (train+val) vs test
+        trainval_lesions, test_lesions = train_test_split(
+            unique_lesions,
+            test_size=test_size,
+            stratify=stratify_labels,
+            random_state=rng_seed,
+        )
+        # Second split: within (train+val), split out validation
+        trainval_strata = lesion_to_dx.reindex(trainval_lesions).values
+        relative_val = val_size / (1.0 - test_size)
+        train_lesions, val_lesions = train_test_split(
+            trainval_lesions,
+            test_size=relative_val,
+            stratify=trainval_strata,
+            random_state=rng_seed + 1,
+        )
+
+        train_base = base_df[lesion_ids.isin(train_lesions)].reset_index(drop=True)
+        val_df = base_df[lesion_ids.isin(val_lesions)].reset_index(drop=True)
+        test_df = base_df[lesion_ids.isin(test_lesions)].reset_index(drop=True)
+    else:
+        # Fallback: image-level splitting (not ideal)
+        print("WARNING: No lesion_id found, splitting by images (potential data leakage!)")
+        # First split: (train+val) vs test
+        trainval_base, test_df = train_test_split(
+            base_df,
+            test_size=test_size,
+            stratify=base_df["dx"],
+            random_state=rng_seed,
+        )
+        # Second split: train vs val
+        relative_val = val_size / (1.0 - test_size)
+        train_base, val_df = train_test_split(
+            trainval_base,
+            test_size=relative_val,
+            stratify=trainval_base["dx"],
+            random_state=rng_seed + 1,
+        )
+
+    # Add augmented images to TRAIN ONLY
+    train_df = pd.concat([train_base, aug_df], ignore_index=True)
+    return train_df.reset_index(drop=True), val_df.reset_index(drop=True), test_df.reset_index(drop=True)
+
+
 if __name__ == "__main__":
     train_dataset, val_dataset = get_train_val_datasets()
     print("Train size:", len(train_dataset))
