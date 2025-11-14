@@ -1,32 +1,49 @@
 import argparse
 import json
 from pathlib import Path
-from typing import Any, Dict
 
 import numpy as np
 import torch
 import torch.nn as nn
-import yaml
 from sklearn.metrics import f1_score, classification_report
 from torch.utils.data import DataLoader, TensorDataset
 
 from src.models.fusion_mlp import FusionMLP
-from src.utils.seed import set_seed
+from src.utils import set_seed
+
+CONFIG = {
+    "seed": 42,
+    "device": "cuda",
+    "num_workers": 4,
+    "data": {
+        "raw_dir": "data/raw/ham10000",
+        "processed_dir": "data/processed",
+        "metadata_csv": "data/processed/metadata.csv",
+        "image_col": "image_path",
+        "target_col": "dx",
+        "group_col": "lesion_id",
+        "folds": 5,
+        "val_size": 0.1,
+        "test_size": 0.1,
+    },
+    "logging": {
+        "out_dir": "artifacts",
+        "tensorboard_dir": "artifacts/tensorboard",
+        "save_study_dir": "artifacts/studies",
+    },
+    "fusion": {
+        "epochs": 30,
+        "patience": 7,
+        "batch_size": 256,
+        "hidden_dim": 128,
+        "num_layers": 2,
+        "dropout": 0.3,
+        "lr": 0.001,
+    },
+}
 
 
-def _load_config(path: str) -> Dict[str, Any]:
-    with open(path, "r") as f:
-        cfg = yaml.safe_load(f)
-    include = cfg.get("include")
-    if include:
-        with open(include, "r") as f:
-            base = yaml.safe_load(f)
-        base.update(cfg)
-        cfg = base
-    return cfg
-
-
-def _load_features(base_dir: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+def _load_features(base_dir):
     tab_dir = base_dir / "tabnet"
     vit_dir = base_dir / "vit"
     required = [
@@ -60,13 +77,7 @@ def _load_features(base_dir: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray, 
     return train_feats, val_feats, test_feats, train_labels, val_labels, test_labels
 
 
-def _build_loaders(
-    X_train: np.ndarray,
-    y_train: np.ndarray,
-    X_val: np.ndarray,
-    y_val: np.ndarray,
-    batch_size: int,
-) -> tuple[DataLoader, DataLoader]:
+def _build_loaders(X_train, y_train, X_val, y_val, batch_size):
     train_dataset = TensorDataset(torch.from_numpy(X_train), torch.from_numpy(y_train))
     val_dataset = TensorDataset(torch.from_numpy(X_val), torch.from_numpy(y_val))
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
@@ -74,13 +85,7 @@ def _build_loaders(
     return train_loader, val_loader
 
 
-def _train_fusion(
-    train_loader: DataLoader,
-    val_loader: DataLoader,
-    input_dim: int,
-    num_classes: int,
-    cfg: Dict[str, Any],
-) -> tuple[FusionMLP, Dict[str, float], np.ndarray, np.ndarray]:
+def _train_fusion(train_loader, val_loader, input_dim, num_classes, cfg):
     fusion_cfg = cfg["fusion"]
     device = torch.device(cfg.get("device", "cuda" if torch.cuda.is_available() else "cpu"))
     model = FusionMLP(
@@ -163,10 +168,10 @@ def _train_fusion(
     return model, metrics, best_proba, best_preds
 
 
-def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
+def run_training(cfg, out_dir, tune):
     if tune:
         print("[WARN] Tuning disabled; proceeding with fixed Fusion parameters.")
-    set_seed(cfg.get("seed", 2025))
+    set_seed(cfg.get("seed", 42))
     out_dir.mkdir(parents=True, exist_ok=True)
 
     base_dir = Path(cfg["logging"]["out_dir"])
@@ -187,7 +192,6 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
         cfg=cfg,
     )
 
-    # Evaluate on test
     model.eval()
     device = torch.device(cfg.get("device", "cuda" if torch.cuda.is_available() else "cpu"))
     test_dataset = TensorDataset(torch.from_numpy(X_test), torch.from_numpy(y_test))
@@ -221,17 +225,14 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
     np.save(out_dir / "test_labels.npy", y_test_np.astype(np.int64))
 
 
-def main(config_path: str, tune: bool) -> int:
-    cfg = _load_config(config_path)
-    out_dir = Path(cfg["logging"]["out_dir"]) / "fusion"
-    run_training(cfg, out_dir, tune=tune)
+def main(tune):
+    out_dir = Path(CONFIG["logging"]["out_dir"]) / "fusion"
+    run_training(CONFIG, out_dir, tune=tune)
     return 0
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", type=str, default="configs/fusion.yaml")
     parser.add_argument("--tune", action="store_true")
     args = parser.parse_args()
-    raise SystemExit(main(args.config, args.tune))
-
+    raise SystemExit(main(args.tune))

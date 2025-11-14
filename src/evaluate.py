@@ -1,14 +1,13 @@
 import argparse
 from pathlib import Path
-from typing import Dict
 
 import numpy as np
 from sklearn.metrics import balanced_accuracy_score, confusion_matrix, f1_score
 
-from src.utils.io import save_json
+from src.utils import save_json
 
 
-def _load_modal_results(base: Path, name: str) -> tuple[np.ndarray, np.ndarray] | tuple[None, None]:
+def _load_modal_results(base, name):
     proba_path = base / name / "val_proba.npy"
     labels_path = base / name / "val_labels.npy"
     if not proba_path.exists() or not labels_path.exists():
@@ -18,7 +17,7 @@ def _load_modal_results(base: Path, name: str) -> tuple[np.ndarray, np.ndarray] 
     return proba, labels
 
 
-def evaluate_predictions(y_true: np.ndarray, proba: np.ndarray) -> Dict[str, float]:
+def evaluate_predictions(y_true, proba):
     pred = proba.argmax(axis=1)
     return {
         "macro_f1": float(f1_score(y_true, pred, average="macro")),
@@ -26,9 +25,9 @@ def evaluate_predictions(y_true: np.ndarray, proba: np.ndarray) -> Dict[str, flo
     }
 
 
-def main(ckpts_dir: str, split: str) -> int:
+def main(ckpts_dir, split):
     base = Path("artifacts")
-    results: Dict[str, Dict[str, float]] = {}
+    results = {}
 
     tab_proba, tab_labels = _load_modal_results(base, "tabnet")
     vit_proba, vit_labels = _load_modal_results(base, "vit")
@@ -46,7 +45,7 @@ def main(ckpts_dir: str, split: str) -> int:
         print("[WARN] No validation predictions found to evaluate.")
         return 0
 
-    def _check_labels(name: str, labels: np.ndarray | None):
+    def _check_labels(name, labels):
         if labels is None:
             return
         if not np.array_equal(labels, reference_labels):
@@ -78,4 +77,3 @@ if __name__ == "__main__":
     parser.add_argument("--split", type=str, default="val")
     args = parser.parse_args()
     raise SystemExit(main(args.ckpts, args.split))
-

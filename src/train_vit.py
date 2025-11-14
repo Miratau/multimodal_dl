@@ -1,36 +1,54 @@
 import argparse
 import json
 from pathlib import Path
-from typing import Any, Dict
 
 import numpy as np
 import torch
 import torch.nn as nn
-import yaml
 from sklearn.metrics import classification_report, f1_score
 from torch.utils.data import DataLoader
 
 from src.data.ham10000 import Ham10000Dataset, make_label_mapping
 from src.models.vit_module import create_vit, split_parameters
-from src.training.engine import train_one_epoch, validate
-from src.utils.seed import set_seed
-from src.utils.transforms import build_train_transforms, build_val_transforms
-from scripts.utils import get_train_val_test_metadata
+from src.utils import train_one_epoch, validate, set_seed, build_train_transforms, build_val_transforms
+from src.data_augmentation import get_train_val_test_metadata
+
+CONFIG = {
+    "seed": 42,
+    "device": "cuda",
+    "num_workers": 4,
+    "data": {
+        "raw_dir": "data/raw/ham10000",
+        "processed_dir": "data/processed",
+        "metadata_csv": "data/processed/metadata.csv",
+        "image_col": "image_path",
+        "target_col": "dx",
+        "group_col": "lesion_id",
+        "folds": 5,
+        "val_size": 0.1,
+        "test_size": 0.1,
+    },
+    "logging": {
+        "out_dir": "artifacts",
+        "tensorboard_dir": "artifacts/tensorboard",
+        "save_study_dir": "artifacts/studies",
+    },
+    "vit": {
+        "backbone": "vit_small_patch16_224",
+        "img_size": 224,
+        "epochs": 40,
+        "patience": 8,
+        "batch_size": 32,
+        "label_smoothing": 0.1,
+        "amp": True,
+        "lr_head": 0.0005,
+        "lr_backbone_mult": 0.25,
+        "weight_decay": 0.0001,
+    },
+}
 
 
-def _load_config(path: str) -> Dict[str, Any]:
-    with open(path, "r") as f:
-        cfg = yaml.safe_load(f)
-    include = cfg.get("include")
-    if include:
-        with open(include, "r") as f:
-            base = yaml.safe_load(f)
-        base.update(cfg)
-        cfg = base
-    return cfg
-
-
-def _prepare_metadata(train_df, val_df, target_col: str) -> tuple:
+def _prepare_metadata(train_df, val_df, target_col):
     label_map = make_label_mapping(train_df, target_col=target_col)
     num_classes = len(label_map)
 
@@ -42,7 +60,7 @@ def _prepare_metadata(train_df, val_df, target_col: str) -> tuple:
     return train_enc, val_enc, label_map, num_classes
 
 
-def _build_dataloaders(train_df, val_df, cfg: Dict[str, Any]) -> tuple:
+def _build_dataloaders(train_df, val_df, cfg):
     img_size = cfg["vit"]["img_size"]
     batch_size = cfg["vit"]["batch_size"]
     num_workers = cfg.get("num_workers", 4)
@@ -63,7 +81,7 @@ def _build_dataloaders(train_df, val_df, cfg: Dict[str, Any]) -> tuple:
     return train_loader, train_eval_loader, val_loader
 
 
-def _train_vit(train_loader, val_loader, cfg: Dict[str, Any], num_classes: int, device: torch.device):
+def _train_vit(train_loader, val_loader, cfg, num_classes, device):
     vit_cfg = cfg["vit"]
     model = create_vit(vit_cfg["backbone"], num_classes=num_classes, pretrained=True).to(device)
     backbone_params, head_params = split_parameters(model)
@@ -111,16 +129,16 @@ def _train_vit(train_loader, val_loader, cfg: Dict[str, Any], num_classes: int, 
     return model, best_proba, best_metrics
 
 
-def _collect_logits(model, loader, device: torch.device) -> tuple[np.ndarray, np.ndarray]:
+def _collect_logits(model, loader, device):
     criterion = nn.CrossEntropyLoss()
     _, proba, y_true = validate(model, loader, criterion, device)
     return proba, y_true
 
 
-def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
+def run_training(cfg, out_dir, tune):
     if tune:
         print("[WARN] Tuning disabled; proceeding with fixed ViT parameters.")
-    set_seed(cfg.get("seed", 2025))
+    set_seed(cfg.get("seed", 42))
     out_dir.mkdir(parents=True, exist_ok=True)
 
     val_size = cfg["data"].get("val_size", 0.1)
@@ -128,11 +146,10 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
     train_meta, val_meta, test_meta = get_train_val_test_metadata(
         val_size=val_size,
         test_size=test_size,
-        seed=cfg.get("seed", 2025),
+        seed=cfg.get("seed", 42),
     )
     target_col = cfg["data"]["target_col"]
     train_enc, val_enc, label_map, num_classes = _prepare_metadata(train_meta, val_meta, target_col)
-    # Encode test using train label_map
     test_enc = test_meta.copy()
     test_enc[target_col] = test_enc[target_col].map(label_map).astype(int)
 
@@ -145,7 +162,6 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
         val_loss, proba_val, val_labels = validate(model, val_loader, nn.CrossEntropyLoss(), device)
         metrics["val_loss"] = float(val_loss)
 
-    # Build test loader and evaluate on test set
     img_size = cfg["vit"]["img_size"]
     target = cfg["data"]["target_col"]
     val_tf = build_val_transforms(img_size)
@@ -163,7 +179,6 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
 
     proba_train, y_train = _collect_logits(model, train_eval_loader, device)
 
-    # Persist artifacts
     torch.save(model.state_dict(), out_dir / "model_best.pth")
     with open(out_dir / "label_map.json", "w") as f:
         json.dump(label_map, f, indent=2)
@@ -183,17 +198,14 @@ def run_training(cfg: Dict[str, Any], out_dir: Path, tune: bool) -> None:
     test_meta.to_csv(out_dir / "test_metadata.csv", index=False)
 
 
-def main(config_path: str, tune: bool) -> int:
-    cfg = _load_config(config_path)
-    out_dir = Path(cfg["logging"]["out_dir"]) / "vit"
-    run_training(cfg, out_dir, tune=tune)
+def main(tune):
+    out_dir = Path(CONFIG["logging"]["out_dir"]) / "vit"
+    run_training(CONFIG, out_dir, tune=tune)
     return 0
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", type=str, default="configs/vit.yaml")
     parser.add_argument("--tune", action="store_true")
     args = parser.parse_args()
-    raise SystemExit(main(args.config, args.tune))
-
+    raise SystemExit(main(args.tune))
