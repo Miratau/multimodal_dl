@@ -1,46 +1,46 @@
 ## HAM10000: TabNet + ViT + Late-Fusion MLP (PyTorch)
 
+A multimodal deep learning project for skin lesion classification using tabular and image features.
+
 ### Setup
 ```bash
-python -m venv .venv && source .venv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Prepare data
-Either download via Kaggle CLI (requires API token) or place the dataset manually.
+### Prepare Data
+Download and prepare the HAM10000 dataset:
 ```bash
-python main.py prepare-data --raw-dir data/raw/ham10000 --out-meta data/processed/metadata.csv --kaggle-dataset kmader/skin-cancer-mnist-ham10000
+python main.py prepare-data
 ```
 
-### Tune TabNet
+### Train Models
+
+**TabNet (tabular model):**
 ```bash
-python main.py train-tabnet --config configs/tabnet.yaml --tune
+python main.py train-tabnet  # Train and produce OOF predictions
 ```
 
-Produce TabNet OOF predictions (using best params):
+**ViT (vision transformer):**
 ```bash
-python main.py train-tabnet --config configs/tabnet.yaml
+python main.py train-vit     # Train and produce OOF predictions
 ```
 
-### Tune ViT
+**Fusion MLP (late-fusion on OOF features):**
 ```bash
-python main.py train-vit --config configs/vit.yaml --tune
+python main.py train-fusion  # Evaluate fusion quality with CV
 ```
 
-Produce ViT OOF predictions (using best params):
+### Evaluate
+Compare all models:
 ```bash
-python main.py train-vit --config configs/vit.yaml
+python main.py evaluate
 ```
 
-### Train Fusion MLP on OOF features
-```bash
-python main.py train-fusion --config configs/fusion.yaml --tune
-```
-
-### Evaluate (OOF-based quick check)
-```bash
-python main.py evaluate --ckpts artifacts/best --split val
-```
-
-Artifacts are saved under `artifacts/` (studies, OOF predictions, etc.). Set seeds and device in `configs/base.yaml`.
-
+### Output
+All results saved to `outputs/`:
+- `tabnet/oof_proba.npy` - TabNet OOF predictions
+- `vit/oof_proba.npy` - ViT OOF predictions
+- `fusion/` - Fusion model results
+- `evaluation.json` - Final metrics
