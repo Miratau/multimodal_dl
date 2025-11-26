@@ -1,6 +1,7 @@
 import argparse
 import json
 from pathlib import Path
+import timm
 
 import numpy as np
 import torch
@@ -8,8 +9,7 @@ import torch.nn as nn
 from sklearn.metrics import classification_report, f1_score
 from torch.utils.data import DataLoader
 
-from src.data.ham10000 import Ham10000Dataset, make_label_mapping
-from src.models.vit_module import create_vit, split_parameters
+from src.ham10000 import Ham10000Dataset, make_label_mapping
 from src.utils import train_one_epoch, validate, set_seed, build_train_transforms, build_val_transforms
 from src.data_augmentation import get_train_val_test_metadata
 
@@ -46,6 +46,23 @@ CONFIG = {
         "weight_decay": 0.0001,
     },
 }
+
+
+def create_vit(backbone, num_classes, pretrained=True):
+    """Create a ViT model via timm (no type annotations to match project style)."""
+    model = timm.create_model(backbone, pretrained=pretrained, num_classes=num_classes)
+    return model
+
+
+def split_parameters(model):
+    """Return (backbone_params, head_params) lists for differential learning rates."""
+    if hasattr(model, "get_classifier"):
+        head = list(model.get_classifier().parameters())
+    else:
+        # fallback for different timm architectures
+        head = list(model.head.parameters())
+    backbone_params = [p for n, p in model.named_parameters() if p.requires_grad and (("head" not in n) and ("classifier" not in n))]
+    return backbone_params, head
 
 
 def _prepare_metadata(train_df, val_df, target_col):

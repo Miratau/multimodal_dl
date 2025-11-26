@@ -8,7 +8,7 @@ import torch.nn as nn
 from sklearn.metrics import f1_score, classification_report
 from torch.utils.data import DataLoader, TensorDataset
 
-from src.models.fusion_mlp import FusionMLP
+from src.fusion_mlp import FusionMLP
 from src.utils import set_seed
 
 CONFIG = {

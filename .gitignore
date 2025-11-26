@@ -34,41 +34,4 @@ Thumbs.db
 data/
 dataset/
 datasets/
-input/
-inputs/
-raw_data/
-processed_data/
-external_data/
-storage/
-downloads/
-
-# Experiment outputs and large artifacts
 artifacts/
-outputs/
-results/
-runs/
-logs/
-wandb/
-mlruns/
-lightning_logs/
-tensorboard/
-tb_logs/
-checkpoints/
-models/
-saved_models/
-
-# Common large model/binary formats
-*.ckpt
-*.pt
-*.pth
-*.onnx
-*.h5
-*.pb
-*.tflite
-
-# Temp files
-tmp/
-temp/
-*.tmp
-
-

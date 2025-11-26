@@ -9,7 +9,7 @@ from pytorch_tabnet.tab_model import TabNetClassifier
 from sklearn.metrics import classification_report, f1_score
 from sklearn.utils.class_weight import compute_class_weight
 
-from src.data.ham10000 import build_tabular_preprocessor, make_label_mapping
+from src.ham10000 import build_tabular_preprocessor, make_label_mapping
 from src.utils import set_seed
 from src.data_augmentation import get_train_val_test_metadata
 
@@ -18,7 +18,7 @@ CONFIG = {
     "device": "cuda",
     "num_workers": 4,
     "data": {
-        "raw_dir": "data/raw/ham10000",
+        "raw_dir": "data/ham10000",
         "processed_dir": "data/processed",
         "metadata_csv": "data/processed/metadata.csv",
         "image_col": "image_path",

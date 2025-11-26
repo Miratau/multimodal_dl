@@ -49,8 +49,8 @@ AUG_BANK = [
 ]
 
 REQUIRED_COLS = ["image_id", "dx", "age", "sex", "localization"]
-AUGMENTED_PATH = "data/processed/augmented_images"
-DATA_PATH = "data/raw/ham10000"
+AUGMENTED_PATH = "data/augmented_images"
+DATA_PATH = "/home/adi.yeltay/projects/multimodal_dl/src/data"
 DX_CLASSES = ["akiec", "bcc", "bkl", "df", "mel", "nv", "vasc"]
 DX2IDX = {c: i for i, c in enumerate(DX_CLASSES)}
 
@@ -77,7 +77,7 @@ def image_list(data_path, exclude_prefix=None):
     return image_paths
 
 
-def augment_img(img_rgb, k, aug_bank, seed=None):
+def augment_img(img_rgb, k, aug_bank, seed=42):
     if k <= 0:
         return []
     n = len(aug_bank)
@@ -439,3 +439,15 @@ if __name__ == "__main__":
     print("Image tensor shape:", img.shape)
     print("Label index:", label)
     print("Metadata:", meta)
+
+    image_paths = image_list(DATA_PATH, exclude_prefix=os.path.abspath(AUGMENTED_PATH))
+
+    aug_paths, aug_md = augment_data(
+        image_paths=image_paths,
+        save_path=AUGMENTED_PATH,
+        data_root=DATA_PATH,
+        multipliers=MULTIPLIERS,           # class-balanced multipliers you defined
+        metadata_file="HAM10000_metadata.csv",
+        bank=AUG_BANK,                     # your augmentation bank
+        overwrite=True                     # wipe and rebuild AUGMENTED_PATH    
+    )
