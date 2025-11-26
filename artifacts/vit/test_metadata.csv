@@ -1,0 +1,1025 @@
+image_id,image_path,dx,age,sex,localization,lesion_id
+ISIC_0031326,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031326.jpg,bkl,65.0,male,back,HAM_0007207
+ISIC_0025819,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025819.jpg,bkl,75.0,female,face,HAM_0002299
+ISIC_0032013,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032013.jpg,bkl,75.0,female,face,HAM_0002299
+ISIC_0029301,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029301.jpg,bkl,45.0,male,upper extremity,HAM_0001221
+ISIC_0026637,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026637.jpg,bkl,45.0,male,upper extremity,HAM_0001221
+ISIC_0031967,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031967.jpg,bkl,70.0,female,scalp,HAM_0004341
+ISIC_0031584,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031584.jpg,bkl,70.0,female,scalp,HAM_0004341
+ISIC_0033539,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033539.jpg,bkl,60.0,male,back,HAM_0001728
+ISIC_0032949,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032949.jpg,bkl,85.0,female,face,HAM_0006085
+ISIC_0033322,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033322.jpg,bkl,85.0,female,face,HAM_0006085
+ISIC_0033127,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033127.jpg,bkl,85.0,female,face,HAM_0006085
+ISIC_0033041,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033041.jpg,bkl,50.0,female,lower extremity,HAM_0002040
+ISIC_0033900,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033900.jpg,bkl,50.0,female,lower extremity,HAM_0002040
+ISIC_0033361,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033361.jpg,bkl,50.0,female,lower extremity,HAM_0002040
+ISIC_0029683,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029683.jpg,bkl,65.0,male,unknown,HAM_0002774
+ISIC_0033736,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033736.jpg,bkl,75.0,male,lower extremity,HAM_0007625
+ISIC_0033378,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033378.jpg,bkl,75.0,male,lower extremity,HAM_0007625
+ISIC_0032665,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032665.jpg,bkl,80.0,male,trunk,HAM_0002928
+ISIC_0033130,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033130.jpg,bkl,80.0,male,trunk,HAM_0002928
+ISIC_0033853,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033853.jpg,bkl,80.0,male,back,HAM_0004458
+ISIC_0033453,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033453.jpg,bkl,80.0,male,back,HAM_0004458
+ISIC_0034126,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034126.jpg,bkl,80.0,male,back,HAM_0004458
+ISIC_0034003,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034003.jpg,bkl,60.0,female,lower extremity,HAM_0007402
+ISIC_0033079,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033079.jpg,bkl,60.0,female,lower extremity,HAM_0007402
+ISIC_0032215,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032215.jpg,bkl,40.0,male,scalp,HAM_0002050
+ISIC_0030124,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030124.jpg,bkl,65.0,male,back,HAM_0004807
+ISIC_0030705,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030705.jpg,bkl,50.0,female,back,HAM_0004141
+ISIC_0028701,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028701.jpg,bkl,55.0,female,lower extremity,HAM_0006128
+ISIC_0024672,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024672.jpg,bkl,65.0,male,back,HAM_0005790
+ISIC_0027680,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027680.jpg,bkl,80.0,male,back,HAM_0004677
+ISIC_0025656,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025656.jpg,bkl,45.0,male,face,HAM_0005915
+ISIC_0029010,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029010.jpg,bkl,55.0,male,back,HAM_0003293
+ISIC_0029003,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029003.jpg,bkl,75.0,male,abdomen,HAM_0004947
+ISIC_0024711,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024711.jpg,bkl,75.0,male,abdomen,HAM_0004947
+ISIC_0032335,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032335.jpg,bkl,80.0,male,back,HAM_0005498
+ISIC_0025326,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025326.jpg,bkl,50.0,female,upper extremity,HAM_0003000
+ISIC_0024592,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024592.jpg,bkl,40.0,female,abdomen,HAM_0000236
+ISIC_0030721,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030721.jpg,bkl,85.0,male,back,HAM_0006769
+ISIC_0024505,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024505.jpg,bkl,40.0,female,face,HAM_0000364
+ISIC_0030706,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030706.jpg,bkl,85.0,male,back,HAM_0003089
+ISIC_0031424,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031424.jpg,bkl,65.0,male,neck,HAM_0004928
+ISIC_0029770,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029770.jpg,bkl,65.0,male,neck,HAM_0004928
+ISIC_0027584,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027584.jpg,bkl,45.0,male,chest,HAM_0001546
+ISIC_0024883,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024883.jpg,bkl,35.0,female,lower extremity,HAM_0006541
+ISIC_0024358,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024358.jpg,bkl,60.0,female,back,HAM_0000933
+ISIC_0027771,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027771.jpg,bkl,60.0,female,back,HAM_0000933
+ISIC_0025703,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025703.jpg,bkl,70.0,male,back,HAM_0000110
+ISIC_0032051,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032051.jpg,bkl,50.0,male,chest,HAM_0001947
+ISIC_0031686,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031686.jpg,bkl,65.0,male,face,HAM_0007261
+ISIC_0031770,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031770.jpg,bkl,55.0,female,lower extremity,HAM_0006128
+ISIC_0027706,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027706.jpg,bkl,30.0,female,face,HAM_0005596
+ISIC_0024547,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024547.jpg,bkl,65.0,male,back,HAM_0005790
+ISIC_0025351,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025351.jpg,bkl,75.0,male,upper extremity,HAM_0007591
+ISIC_0029031,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029031.jpg,bkl,50.0,male,chest,HAM_0004143
+ISIC_0025222,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025222.jpg,bkl,65.0,female,face,HAM_0000973
+ISIC_0025064,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025064.jpg,bkl,35.0,female,lower extremity,HAM_0006541
+ISIC_0026614,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026614.jpg,bkl,45.0,male,chest,HAM_0001232
+ISIC_0028550,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028550.jpg,bkl,60.0,male,back,HAM_0000259
+ISIC_0024477,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024477.jpg,bkl,60.0,male,back,HAM_0000259
+ISIC_0026493,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026493.jpg,bkl,60.0,male,back,HAM_0000259
+ISIC_0030965,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030965.jpg,bkl,75.0,female,chest,HAM_0006475
+ISIC_0031352,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031352.jpg,bkl,55.0,male,face,HAM_0004379
+ISIC_0031150,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031150.jpg,bkl,70.0,female,upper extremity,HAM_0001094
+ISIC_0032024,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032024.jpg,bkl,65.0,female,upper extremity,HAM_0002303
+ISIC_0029384,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029384.jpg,bkl,40.0,male,face,HAM_0001486
+ISIC_0032358,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032358.jpg,bkl,50.0,female,back,HAM_0006267
+ISIC_0031200,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031200.jpg,bkl,50.0,female,back,HAM_0006267
+ISIC_0025040,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025040.jpg,bkl,35.0,female,lower extremity,HAM_0006541
+ISIC_0025068,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025068.jpg,bkl,80.0,male,face,HAM_0000542
+ISIC_0030976,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030976.jpg,bkl,60.0,male,back,HAM_0001722
+ISIC_0028707,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028707.jpg,bkl,60.0,male,upper extremity,HAM_0000920
+ISIC_0031519,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031519.jpg,bkl,70.0,female,lower extremity,HAM_0000149
+ISIC_0025113,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025113.jpg,bkl,70.0,female,lower extremity,HAM_0000149
+ISIC_0024786,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024786.jpg,bkl,70.0,male,lower extremity,HAM_0002227
+ISIC_0031037,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031037.jpg,bkl,65.0,female,upper extremity,HAM_0002303
+ISIC_0030383,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030383.jpg,bkl,80.0,female,face,HAM_0003996
+ISIC_0025465,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025465.jpg,bkl,80.0,female,face,HAM_0003996
+ISIC_0026277,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026277.jpg,bkl,75.0,male,face,HAM_0000696
+ISIC_0028294,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028294.jpg,bkl,75.0,female,face,HAM_0002042
+ISIC_0028662,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028662.jpg,bkl,75.0,female,face,HAM_0002042
+ISIC_0031349,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031349.jpg,bkl,75.0,female,face,HAM_0002042
+ISIC_0026263,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026263.jpg,bkl,75.0,female,face,HAM_0002042
+ISIC_0027737,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027737.jpg,bkl,35.0,female,face,HAM_0002903
+ISIC_0024774,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024774.jpg,bkl,35.0,female,face,HAM_0002903
+ISIC_0031677,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031677.jpg,bkl,75.0,male,face,HAM_0002683
+ISIC_0025753,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025753.jpg,bkl,70.0,male,face,HAM_0004912
+ISIC_0031600,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031600.jpg,bkl,70.0,male,face,HAM_0004912
+ISIC_0028490,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028490.jpg,bkl,65.0,male,face,HAM_0001642
+ISIC_0024782,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024782.jpg,bkl,65.0,female,chest,HAM_0004004
+ISIC_0029872,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029872.jpg,bkl,65.0,female,chest,HAM_0004004
+ISIC_0028347,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028347.jpg,bkl,80.0,male,upper extremity,HAM_0001991
+ISIC_0033460,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033460.jpg,bkl,85.0,male,face,HAM_0005847
+ISIC_0030630,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030630.jpg,bkl,70.0,male,chest,HAM_0003787
+ISIC_0033701,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033701.jpg,bkl,70.0,male,back,HAM_0004245
+ISIC_0033884,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033884.jpg,bkl,70.0,male,back,HAM_0004245
+ISIC_0031133,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031133.jpg,bkl,70.0,female,trunk,HAM_0007395
+ISIC_0026441,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026441.jpg,bkl,80.0,male,lower extremity,HAM_0005993
+ISIC_0028826,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028826.jpg,bkl,70.0,male,abdomen,HAM_0000865
+ISIC_0030067,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030067.jpg,bkl,70.0,male,face,HAM_0001589
+ISIC_0031436,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031436.jpg,bkl,75.0,male,upper extremity,HAM_0006243
+ISIC_0029227,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029227.jpg,bkl,70.0,male,hand,HAM_0007219
+ISIC_0026416,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026416.jpg,bkl,45.0,female,trunk,HAM_0003979
+ISIC_0031362,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031362.jpg,bkl,70.0,female,trunk,HAM_0000105
+ISIC_0031761,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031761.jpg,bkl,35.0,female,trunk,HAM_0000296
+ISIC_0026042,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026042.jpg,bkl,75.0,male,chest,HAM_0007000
+ISIC_0029967,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029967.jpg,df,65.0,female,lower extremity,HAM_0004960
+ISIC_0027876,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027876.jpg,df,65.0,female,lower extremity,HAM_0004960
+ISIC_0029962,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029962.jpg,df,65.0,male,foot,HAM_0007410
+ISIC_0031457,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031457.jpg,df,65.0,male,foot,HAM_0007410
+ISIC_0031123,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031123.jpg,df,40.0,male,lower extremity,HAM_0003487
+ISIC_0024845,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024845.jpg,df,40.0,male,lower extremity,HAM_0003487
+ISIC_0032613,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032613.jpg,df,25.0,female,lower extremity,HAM_0005584
+ISIC_0033256,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033256.jpg,df,25.0,female,lower extremity,HAM_0005584
+ISIC_0033695,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033695.jpg,df,45.0,female,lower extremity,HAM_0000349
+ISIC_0033005,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033005.jpg,df,45.0,female,lower extremity,HAM_0000349
+ISIC_0033422,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033422.jpg,df,45.0,male,lower extremity,HAM_0003597
+ISIC_0027488,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027488.jpg,df,45.0,male,lower extremity,HAM_0003597
+ISIC_0025771,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025771.jpg,df,35.0,female,lower extremity,HAM_0001841
+ISIC_0032248,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032248.jpg,mel,75.0,male,neck,HAM_0002119
+ISIC_0029028,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029028.jpg,mel,85.0,female,trunk,HAM_0003182
+ISIC_0027125,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027125.jpg,mel,85.0,female,trunk,HAM_0003182
+ISIC_0029575,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029575.jpg,mel,45.0,male,back,HAM_0001747
+ISIC_0028361,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028361.jpg,mel,45.0,male,back,HAM_0001747
+ISIC_0031118,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031118.jpg,mel,75.0,male,upper extremity,HAM_0006900
+ISIC_0030080,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030080.jpg,mel,75.0,male,upper extremity,HAM_0006900
+ISIC_0032400,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032400.jpg,mel,60.0,female,abdomen,HAM_0006803
+ISIC_0024545,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024545.jpg,mel,60.0,female,abdomen,HAM_0006803
+ISIC_0026892,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026892.jpg,mel,75.0,male,unknown,HAM_0007560
+ISIC_0024987,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024987.jpg,mel,75.0,male,unknown,HAM_0007560
+ISIC_0024898,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024898.jpg,mel,80.0,male,lower extremity,HAM_0002534
+ISIC_0029538,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029538.jpg,mel,80.0,male,lower extremity,HAM_0002534
+ISIC_0026113,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026113.jpg,mel,50.0,male,abdomen,HAM_0002714
+ISIC_0032265,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032265.jpg,mel,50.0,male,abdomen,HAM_0002714
+ISIC_0028519,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028519.jpg,mel,80.0,male,back,HAM_0003212
+ISIC_0024767,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024767.jpg,mel,80.0,male,back,HAM_0003212
+ISIC_0027487,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027487.jpg,mel,35.0,female,lower extremity,HAM_0004483
+ISIC_0027261,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027261.jpg,mel,75.0,male,ear,HAM_0005084
+ISIC_0028505,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028505.jpg,mel,75.0,male,ear,HAM_0005084
+ISIC_0025927,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025927.jpg,mel,50.0,female,upper extremity,HAM_0002557
+ISIC_0027352,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027352.jpg,mel,75.0,male,upper extremity,HAM_0003683
+ISIC_0029558,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029558.jpg,mel,75.0,male,upper extremity,HAM_0003683
+ISIC_0029242,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029242.jpg,mel,85.0,male,back,HAM_0003449
+ISIC_0027263,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027263.jpg,mel,85.0,male,back,HAM_0003449
+ISIC_0030824,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030824.jpg,mel,60.0,male,chest,HAM_0000330
+ISIC_0028489,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028489.jpg,mel,70.0,male,upper extremity,HAM_0005785
+ISIC_0026236,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026236.jpg,mel,70.0,male,upper extremity,HAM_0005785
+ISIC_0025035,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025035.jpg,mel,70.0,female,lower extremity,HAM_0007073
+ISIC_0032888,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032888.jpg,mel,55.0,male,lower extremity,HAM_0002939
+ISIC_0033968,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033968.jpg,mel,55.0,male,lower extremity,HAM_0002939
+ISIC_0029909,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029909.jpg,mel,75.0,female,ear,HAM_0001266
+ISIC_0033432,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033432.jpg,mel,55.0,male,trunk,HAM_0005893
+ISIC_0032833,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032833.jpg,mel,55.0,male,trunk,HAM_0005893
+ISIC_0034236,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034236.jpg,mel,55.0,male,trunk,HAM_0005893
+ISIC_0032733,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032733.jpg,mel,70.0,male,back,HAM_0000321
+ISIC_0033183,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033183.jpg,mel,70.0,male,back,HAM_0000321
+ISIC_0032564,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032564.jpg,mel,70.0,male,back,HAM_0000321
+ISIC_0033820,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033820.jpg,mel,70.0,male,face,HAM_0002086
+ISIC_0033814,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033814.jpg,mel,70.0,male,face,HAM_0002086
+ISIC_0033325,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033325.jpg,mel,60.0,male,chest,HAM_0005777
+ISIC_0034208,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034208.jpg,mel,60.0,male,chest,HAM_0005777
+ISIC_0033240,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033240.jpg,mel,70.0,male,scalp,HAM_0005303
+ISIC_0032782,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032782.jpg,mel,70.0,male,scalp,HAM_0005303
+ISIC_0032522,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032522.jpg,mel,70.0,male,scalp,HAM_0005303
+ISIC_0033980,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033980.jpg,mel,30.0,female,upper extremity,HAM_0003602
+ISIC_0032533,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032533.jpg,mel,30.0,female,upper extremity,HAM_0003602
+ISIC_0033986,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033986.jpg,mel,30.0,female,upper extremity,HAM_0003602
+ISIC_0033004,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033004.jpg,mel,30.0,female,upper extremity,HAM_0003602
+ISIC_0033479,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033479.jpg,mel,40.0,female,back,HAM_0004321
+ISIC_0033522,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033522.jpg,mel,40.0,female,back,HAM_0004321
+ISIC_0034104,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034104.jpg,mel,55.0,male,upper extremity,HAM_0002993
+ISIC_0032547,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032547.jpg,mel,55.0,male,upper extremity,HAM_0002993
+ISIC_0033644,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033644.jpg,mel,55.0,male,upper extremity,HAM_0002993
+ISIC_0031709,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031709.jpg,mel,65.0,male,neck,HAM_0000282
+ISIC_0032610,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032610.jpg,mel,40.0,male,upper extremity,HAM_0006802
+ISIC_0032836,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032836.jpg,mel,50.0,male,abdomen,HAM_0003073
+ISIC_0033444,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033444.jpg,mel,50.0,male,abdomen,HAM_0003073
+ISIC_0034183,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034183.jpg,mel,50.0,male,abdomen,HAM_0003073
+ISIC_0027402,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027402.jpg,mel,60.0,male,lower extremity,HAM_0006556
+ISIC_0033279,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033279.jpg,mel,40.0,male,upper extremity,HAM_0006802
+ISIC_0032887,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032887.jpg,mel,40.0,male,upper extremity,HAM_0006802
+ISIC_0034107,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034107.jpg,mel,40.0,female,chest,HAM_0005809
+ISIC_0033368,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033368.jpg,mel,40.0,female,chest,HAM_0005809
+ISIC_0033957,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033957.jpg,mel,60.0,male,upper extremity,HAM_0002617
+ISIC_0034172,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034172.jpg,mel,60.0,male,upper extremity,HAM_0002617
+ISIC_0033393,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033393.jpg,mel,60.0,male,upper extremity,HAM_0002617
+ISIC_0032862,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032862.jpg,mel,65.0,male,upper extremity,HAM_0000176
+ISIC_0033073,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033073.jpg,mel,65.0,male,upper extremity,HAM_0000176
+ISIC_0033696,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033696.jpg,mel,65.0,male,upper extremity,HAM_0000176
+ISIC_0028520,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028520.jpg,mel,75.0,male,back,HAM_0001793
+ISIC_0034000,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034000.jpg,mel,75.0,male,back,HAM_0001793
+ISIC_0031186,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031186.jpg,mel,70.0,male,face,HAM_0000988
+ISIC_0029933,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029933.jpg,mel,45.0,female,upper extremity,HAM_0007305
+ISIC_0026268,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026268.jpg,mel,80.0,male,face,HAM_0001428
+ISIC_0024449,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024449.jpg,mel,55.0,male,back,HAM_0001950
+ISIC_0028198,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028198.jpg,mel,40.0,female,back,HAM_0005064
+ISIC_0027144,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027144.jpg,mel,40.0,female,back,HAM_0005064
+ISIC_0025085,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025085.jpg,mel,75.0,male,upper extremity,HAM_0000888
+ISIC_0031034,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031034.jpg,mel,75.0,male,upper extremity,HAM_0000888
+ISIC_0027620,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027620.jpg,mel,80.0,male,lower extremity,HAM_0002534
+ISIC_0030932,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030932.jpg,mel,70.0,female,lower extremity,HAM_0000241
+ISIC_0025238,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025238.jpg,mel,55.0,male,lower extremity,HAM_0004817
+ISIC_0027155,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027155.jpg,mel,65.0,male,neck,HAM_0000282
+ISIC_0029146,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029146.jpg,mel,65.0,male,face,HAM_0002079
+ISIC_0027442,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027442.jpg,mel,80.0,male,neck,HAM_0002375
+ISIC_0024940,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024940.jpg,mel,80.0,male,neck,HAM_0002375
+ISIC_0030110,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030110.jpg,mel,50.0,female,upper extremity,HAM_0001655
+ISIC_0029318,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029318.jpg,mel,60.0,female,back,HAM_0002609
+ISIC_0032070,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032070.jpg,mel,60.0,female,back,HAM_0002609
+ISIC_0026604,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026604.jpg,mel,70.0,male,ear,HAM_0002906
+ISIC_0028777,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028777.jpg,mel,60.0,male,lower extremity,HAM_0000125
+ISIC_0027964,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027964.jpg,mel,60.0,male,lower extremity,HAM_0000125
+ISIC_0026868,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026868.jpg,mel,75.0,male,lower extremity,HAM_0005251
+ISIC_0027742,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027742.jpg,mel,60.0,male,back,HAM_0005203
+ISIC_0032372,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032372.jpg,mel,60.0,male,lower extremity,HAM_0000125
+ISIC_0027517,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027517.jpg,mel,70.0,male,ear,HAM_0002906
+ISIC_0029958,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029958.jpg,mel,65.0,female,face,HAM_0004507
+ISIC_0031908,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031908.jpg,mel,75.0,male,back,HAM_0002772
+ISIC_0026897,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026897.jpg,mel,75.0,male,back,HAM_0002772
+ISIC_0026586,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026586.jpg,mel,85.0,male,upper extremity,HAM_0001976
+ISIC_0025732,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025732.jpg,mel,85.0,male,upper extremity,HAM_0001976
+ISIC_0030695,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030695.jpg,mel,80.0,male,lower extremity,HAM_0004164
+ISIC_0024554,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024554.jpg,mel,65.0,female,face,HAM_0004507
+ISIC_0031203,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031203.jpg,mel,80.0,male,lower extremity,HAM_0004164
+ISIC_0030183,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030183.jpg,mel,70.0,male,chest,HAM_0005532
+ISIC_0024630,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024630.jpg,mel,85.0,male,lower extremity,HAM_0007511
+ISIC_0024333,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024333.jpg,mel,85.0,male,lower extremity,HAM_0007511
+ISIC_0031005,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031005.jpg,mel,65.0,male,back,HAM_0000517
+ISIC_0030507,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030507.jpg,mel,65.0,male,back,HAM_0000517
+ISIC_0024864,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024864.jpg,mel,40.0,female,lower extremity,HAM_0003167
+ISIC_0028493,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028493.jpg,mel,85.0,male,chest,HAM_0003534
+ISIC_0028968,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028968.jpg,mel,55.0,male,upper extremity,HAM_0001910
+ISIC_0024739,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024739.jpg,mel,55.0,male,upper extremity,HAM_0001910
+ISIC_0031746,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031746.jpg,mel,85.0,male,chest,HAM_0003534
+ISIC_0029404,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029404.jpg,vasc,10.0,male,trunk,HAM_0002692
+ISIC_0030275,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030275.jpg,vasc,10.0,male,trunk,HAM_0002692
+ISIC_0033135,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033135.jpg,vasc,80.0,female,lower extremity,HAM_0004791
+ISIC_0032538,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032538.jpg,vasc,80.0,female,lower extremity,HAM_0004791
+ISIC_0033591,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033591.jpg,vasc,80.0,female,lower extremity,HAM_0004791
+ISIC_0033749,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033749.jpg,vasc,80.0,male,lower extremity,HAM_0001852
+ISIC_0034196,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034196.jpg,vasc,80.0,male,lower extremity,HAM_0001852
+ISIC_0032270,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032270.jpg,vasc,70.0,female,lower extremity,HAM_0005270
+ISIC_0031093,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031093.jpg,vasc,70.0,male,back,HAM_0000502
+ISIC_0029608,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029608.jpg,vasc,70.0,male,back,HAM_0000502
+ISIC_0025628,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025628.jpg,vasc,80.0,male,abdomen,HAM_0005475
+ISIC_0029877,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029877.jpg,vasc,80.0,male,lower extremity,HAM_0006193
+ISIC_0025606,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025606.jpg,vasc,55.0,male,scalp,HAM_0005376
+ISIC_0031065,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031065.jpg,vasc,35.0,female,trunk,HAM_0000109
+ISIC_0026713,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026713.jpg,vasc,35.0,female,hand,HAM_0006138
+ISIC_0034093,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034093.jpg,bcc,80.0,female,face,HAM_0003220
+ISIC_0027135,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027135.jpg,bcc,60.0,male,back,HAM_0004388
+ISIC_0032139,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032139.jpg,bcc,85.0,female,face,HAM_0003738
+ISIC_0031243,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031243.jpg,bcc,85.0,female,face,HAM_0003738
+ISIC_0028457,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028457.jpg,bcc,75.0,female,face,HAM_0007446
+ISIC_0024360,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024360.jpg,bcc,50.0,female,chest,HAM_0005530
+ISIC_0029899,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029899.jpg,bcc,50.0,female,chest,HAM_0005530
+ISIC_0027478,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027478.jpg,bcc,40.0,male,back,HAM_0003593
+ISIC_0033203,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033203.jpg,bcc,65.0,female,back,HAM_0000879
+ISIC_0033366,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033366.jpg,bcc,65.0,female,back,HAM_0000879
+ISIC_0032816,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032816.jpg,bcc,65.0,female,back,HAM_0000879
+ISIC_0031836,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031836.jpg,bcc,40.0,female,abdomen,HAM_0003600
+ISIC_0026528,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026528.jpg,bcc,70.0,male,trunk,HAM_0007550
+ISIC_0031225,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031225.jpg,bcc,60.0,female,chest,HAM_0000352
+ISIC_0028818,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028818.jpg,bcc,70.0,male,foot,HAM_0003694
+ISIC_0028059,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028059.jpg,bcc,40.0,male,back,HAM_0004273
+ISIC_0029331,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029331.jpg,bcc,50.0,male,lower extremity,HAM_0002069
+ISIC_0031351,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031351.jpg,bcc,75.0,male,chest,HAM_0006274
+ISIC_0025144,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025144.jpg,bcc,75.0,male,back,HAM_0004831
+ISIC_0025301,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025301.jpg,bcc,70.0,male,back,HAM_0000987
+ISIC_0031643,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031643.jpg,bcc,70.0,male,back,HAM_0003851
+ISIC_0025417,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025417.jpg,bcc,70.0,male,upper extremity,HAM_0002577
+ISIC_0028035,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028035.jpg,bcc,70.0,male,upper extremity,HAM_0002577
+ISIC_0028486,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028486.jpg,bcc,65.0,male,face,HAM_0005981
+ISIC_0027371,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027371.jpg,bcc,65.0,male,face,HAM_0005981
+ISIC_0025299,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025299.jpg,bcc,70.0,male,back,HAM_0007313
+ISIC_0028739,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028739.jpg,bcc,70.0,male,back,HAM_0007313
+ISIC_0031712,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031712.jpg,bcc,75.0,male,back,HAM_0004147
+ISIC_0027915,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027915.jpg,bcc,80.0,male,abdomen,HAM_0000719
+ISIC_0026337,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026337.jpg,bcc,80.0,male,abdomen,HAM_0000719
+ISIC_0026902,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026902.jpg,bcc,80.0,male,abdomen,HAM_0000719
+ISIC_0030197,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030197.jpg,bcc,75.0,male,back,HAM_0006727
+ISIC_0024582,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024582.jpg,bcc,75.0,male,back,HAM_0006727
+ISIC_0029655,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029655.jpg,bcc,75.0,male,back,HAM_0006727
+ISIC_0030964,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030964.jpg,bcc,55.0,male,back,HAM_0007557
+ISIC_0027722,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027722.jpg,bcc,70.0,male,back,HAM_0000987
+ISIC_0032314,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032314.jpg,bcc,85.0,male,back,HAM_0007611
+ISIC_0029323,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029323.jpg,bcc,75.0,male,chest,HAM_0000872
+ISIC_0031520,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031520.jpg,bcc,75.0,male,chest,HAM_0000872
+ISIC_0031171,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031171.jpg,bcc,75.0,male,chest,HAM_0000872
+ISIC_0030514,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030514.jpg,bcc,85.0,male,back,HAM_0006872
+ISIC_0024345,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024345.jpg,bcc,85.0,male,back,HAM_0006872
+ISIC_0028928,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028928.jpg,bcc,55.0,female,lower extremity,HAM_0002998
+ISIC_0031378,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031378.jpg,bcc,55.0,female,lower extremity,HAM_0002998
+ISIC_0032132,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032132.jpg,bcc,60.0,female,chest,HAM_0000352
+ISIC_0030249,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030249.jpg,bcc,80.0,female,lower extremity,HAM_0003444
+ISIC_0028687,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028687.jpg,bcc,80.0,female,lower extremity,HAM_0003444
+ISIC_0027120,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027120.jpg,bcc,80.0,female,lower extremity,HAM_0003444
+ISIC_0029501,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029501.jpg,bcc,70.0,male,upper extremity,HAM_0002018
+ISIC_0031614,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031614.jpg,bcc,45.0,female,back,HAM_0006049
+ISIC_0025031,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025031.jpg,bcc,60.0,male,abdomen,HAM_0002934
+ISIC_0028978,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028978.jpg,bcc,40.0,female,abdomen,HAM_0005026
+ISIC_0028728,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028728.jpg,bcc,40.0,female,abdomen,HAM_0005026
+ISIC_0032115,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032115.jpg,nv,45.0,female,upper extremity,HAM_0000701
+ISIC_0025843,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025843.jpg,nv,45.0,female,trunk,HAM_0004098
+ISIC_0027347,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027347.jpg,nv,45.0,female,genital,HAM_0005234
+ISIC_0025311,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025311.jpg,nv,45.0,female,trunk,HAM_0001594
+ISIC_0028266,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028266.jpg,nv,50.0,male,lower extremity,HAM_0003882
+ISIC_0026054,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026054.jpg,nv,50.0,male,lower extremity,HAM_0002943
+ISIC_0028455,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028455.jpg,nv,50.0,male,trunk,HAM_0004270
+ISIC_0031974,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031974.jpg,nv,45.0,male,lower extremity,HAM_0000758
+ISIC_0026768,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026768.jpg,nv,55.0,male,lower extremity,HAM_0002514
+ISIC_0029526,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029526.jpg,nv,45.0,male,back,HAM_0001061
+ISIC_0029540,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029540.jpg,nv,55.0,male,upper extremity,HAM_0003516
+ISIC_0025079,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025079.jpg,nv,55.0,male,foot,HAM_0005103
+ISIC_0024584,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024584.jpg,nv,45.0,female,back,HAM_0001391
+ISIC_0025528,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025528.jpg,nv,45.0,female,trunk,HAM_0005597
+ISIC_0031164,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031164.jpg,nv,30.0,female,abdomen,HAM_0007230
+ISIC_0029685,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029685.jpg,nv,50.0,female,trunk,HAM_0002443
+ISIC_0026039,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026039.jpg,nv,50.0,female,lower extremity,HAM_0000797
+ISIC_0025692,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025692.jpg,nv,45.0,female,lower extremity,HAM_0007378
+ISIC_0030421,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030421.jpg,nv,45.0,female,trunk,HAM_0007183
+ISIC_0028779,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028779.jpg,nv,65.0,female,abdomen,HAM_0003524
+ISIC_0027717,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027717.jpg,nv,50.0,male,upper extremity,HAM_0005647
+ISIC_0030599,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030599.jpg,nv,45.0,female,back,HAM_0004074
+ISIC_0032153,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032153.jpg,nv,45.0,female,back,HAM_0001627
+ISIC_0032211,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032211.jpg,nv,45.0,female,scalp,HAM_0000041
+ISIC_0026565,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026565.jpg,nv,40.0,female,trunk,HAM_0002465
+ISIC_0026914,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026914.jpg,nv,55.0,male,back,HAM_0005038
+ISIC_0031099,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031099.jpg,nv,50.0,male,foot,HAM_0004544
+ISIC_0027912,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027912.jpg,nv,50.0,female,abdomen,HAM_0002322
+ISIC_0028594,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028594.jpg,nv,35.0,female,genital,HAM_0006228
+ISIC_0031185,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031185.jpg,nv,35.0,female,back,HAM_0000329
+ISIC_0032011,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032011.jpg,nv,45.0,female,upper extremity,HAM_0002433
+ISIC_0030540,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030540.jpg,nv,45.0,female,upper extremity,HAM_0000529
+ISIC_0028007,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028007.jpg,nv,45.0,female,lower extremity,HAM_0006969
+ISIC_0029729,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029729.jpg,nv,75.0,female,lower extremity,HAM_0003008
+ISIC_0026383,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026383.jpg,nv,80.0,male,back,HAM_0004039
+ISIC_0027691,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027691.jpg,nv,45.0,female,trunk,HAM_0001482
+ISIC_0028805,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028805.jpg,nv,50.0,female,abdomen,HAM_0006166
+ISIC_0025052,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025052.jpg,nv,45.0,female,lower extremity,HAM_0005424
+ISIC_0031174,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031174.jpg,nv,55.0,male,abdomen,HAM_0000713
+ISIC_0027886,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027886.jpg,nv,55.0,male,trunk,HAM_0000003
+ISIC_0027301,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027301.jpg,nv,40.0,female,lower extremity,HAM_0003092
+ISIC_0026836,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026836.jpg,nv,40.0,female,face,HAM_0006871
+ISIC_0028864,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028864.jpg,nv,40.0,female,upper extremity,HAM_0005800
+ISIC_0027843,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027843.jpg,nv,60.0,male,lower extremity,HAM_0006671
+ISIC_0030536,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030536.jpg,nv,55.0,male,back,HAM_0002782
+ISIC_0026075,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026075.jpg,nv,30.0,male,back,HAM_0004134
+ISIC_0029619,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029619.jpg,nv,45.0,female,lower extremity,HAM_0002080
+ISIC_0024884,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024884.jpg,nv,55.0,male,back,HAM_0001140
+ISIC_0027290,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027290.jpg,nv,60.0,male,trunk,HAM_0003502
+ISIC_0031035,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031035.jpg,nv,60.0,male,lower extremity,HAM_0004253
+ISIC_0031781,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031781.jpg,nv,40.0,male,trunk,HAM_0004263
+ISIC_0030120,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030120.jpg,nv,45.0,male,trunk,HAM_0000729
+ISIC_0028699,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028699.jpg,nv,35.0,male,lower extremity,HAM_0002260
+ISIC_0030003,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030003.jpg,nv,35.0,male,lower extremity,HAM_0005229
+ISIC_0030282,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030282.jpg,nv,50.0,female,upper extremity,HAM_0005211
+ISIC_0028921,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028921.jpg,nv,75.0,male,abdomen,HAM_0000507
+ISIC_0029703,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029703.jpg,nv,75.0,male,trunk,HAM_0000617
+ISIC_0025910,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025910.jpg,nv,50.0,male,lower extremity,HAM_0000235
+ISIC_0031402,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031402.jpg,nv,35.0,female,abdomen,HAM_0002505
+ISIC_0025375,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025375.jpg,nv,35.0,female,lower extremity,HAM_0007600
+ISIC_0025833,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025833.jpg,nv,35.0,female,trunk,HAM_0003131
+ISIC_0029274,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029274.jpg,nv,45.0,male,upper extremity,HAM_0003632
+ISIC_0028861,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028861.jpg,nv,55.0,male,back,HAM_0005621
+ISIC_0027157,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027157.jpg,nv,30.0,male,lower extremity,HAM_0002756
+ISIC_0032201,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032201.jpg,nv,45.0,male,lower extremity,HAM_0000227
+ISIC_0024649,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024649.jpg,nv,50.0,female,trunk,HAM_0001151
+ISIC_0029305,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029305.jpg,nv,40.0,male,trunk,HAM_0002459
+ISIC_0027485,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027485.jpg,nv,40.0,male,abdomen,HAM_0003060
+ISIC_0030569,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030569.jpg,nv,80.0,male,trunk,HAM_0003924
+ISIC_0026862,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026862.jpg,nv,45.0,female,abdomen,HAM_0002211
+ISIC_0025815,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025815.jpg,nv,50.0,female,trunk,HAM_0005036
+ISIC_0028833,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028833.jpg,nv,50.0,female,back,HAM_0001015
+ISIC_0029111,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029111.jpg,nv,45.0,female,back,HAM_0003964
+ISIC_0027938,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027938.jpg,nv,30.0,male,abdomen,HAM_0006885
+ISIC_0031256,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031256.jpg,nv,30.0,male,lower extremity,HAM_0005065
+ISIC_0025461,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025461.jpg,nv,55.0,male,upper extremity,HAM_0000852
+ISIC_0025849,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025849.jpg,nv,45.0,female,lower extremity,HAM_0001153
+ISIC_0030202,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030202.jpg,nv,45.0,female,lower extremity,HAM_0003644
+ISIC_0030911,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030911.jpg,nv,40.0,female,trunk,HAM_0005111
+ISIC_0032266,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032266.jpg,nv,55.0,female,lower extremity,HAM_0002289
+ISIC_0029471,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029471.jpg,nv,35.0,female,trunk,HAM_0000205
+ISIC_0030570,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030570.jpg,nv,5.0,male,abdomen,HAM_0004885
+ISIC_0025246,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025246.jpg,nv,5.0,male,lower extremity,HAM_0001042
+ISIC_0026112,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026112.jpg,nv,65.0,female,lower extremity,HAM_0000301
+ISIC_0032336,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032336.jpg,nv,35.0,female,lower extremity,HAM_0002460
+ISIC_0030461,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030461.jpg,nv,55.0,male,lower extremity,HAM_0004252
+ISIC_0026915,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026915.jpg,nv,55.0,female,lower extremity,HAM_0002851
+ISIC_0030237,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030237.jpg,nv,45.0,female,upper extremity,HAM_0003210
+ISIC_0028105,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028105.jpg,nv,35.0,male,lower extremity,HAM_0005397
+ISIC_0025397,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025397.jpg,nv,45.0,female,upper extremity,HAM_0004402
+ISIC_0025877,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025877.jpg,nv,55.0,female,lower extremity,HAM_0005123
+ISIC_0031172,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031172.jpg,nv,55.0,male,lower extremity,HAM_0002165
+ISIC_0029689,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029689.jpg,nv,65.0,female,trunk,HAM_0006976
+ISIC_0030711,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030711.jpg,nv,50.0,female,lower extremity,HAM_0002418
+ISIC_0027557,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027557.jpg,nv,50.0,female,trunk,HAM_0005169
+ISIC_0031156,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031156.jpg,nv,45.0,female,neck,HAM_0003209
+ISIC_0030186,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030186.jpg,nv,45.0,female,trunk,HAM_0006850
+ISIC_0025740,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025740.jpg,nv,45.0,female,trunk,HAM_0001308
+ISIC_0024663,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024663.jpg,nv,55.0,female,abdomen,HAM_0000640
+ISIC_0028936,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028936.jpg,nv,65.0,male,abdomen,HAM_0005377
+ISIC_0025109,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025109.jpg,nv,65.0,male,abdomen,HAM_0005031
+ISIC_0027539,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027539.jpg,nv,40.0,female,abdomen,HAM_0006176
+ISIC_0029181,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029181.jpg,nv,40.0,female,lower extremity,HAM_0003126
+ISIC_0030556,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030556.jpg,nv,55.0,male,trunk,HAM_0001771
+ISIC_0025481,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025481.jpg,nv,55.0,male,upper extremity,HAM_0001909
+ISIC_0026308,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026308.jpg,nv,55.0,male,back,HAM_0005714
+ISIC_0029219,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029219.jpg,nv,80.0,male,lower extremity,HAM_0001923
+ISIC_0029167,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029167.jpg,nv,60.0,female,upper extremity,HAM_0000213
+ISIC_0028208,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028208.jpg,nv,70.0,female,foot,HAM_0002398
+ISIC_0027009,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027009.jpg,nv,70.0,female,lower extremity,HAM_0003594
+ISIC_0026628,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026628.jpg,nv,50.0,male,back,HAM_0006935
+ISIC_0025894,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025894.jpg,nv,50.0,female,lower extremity,HAM_0000017
+ISIC_0025437,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025437.jpg,nv,40.0,male,abdomen,HAM_0007273
+ISIC_0028474,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028474.jpg,nv,50.0,female,lower extremity,HAM_0004682
+ISIC_0031675,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031675.jpg,nv,50.0,female,lower extremity,HAM_0006939
+ISIC_0024977,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024977.jpg,nv,60.0,male,trunk,HAM_0007224
+ISIC_0024796,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024796.jpg,nv,60.0,male,lower extremity,HAM_0003052
+ISIC_0024974,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024974.jpg,nv,40.0,male,trunk,HAM_0006093
+ISIC_0028182,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028182.jpg,nv,50.0,male,trunk,HAM_0000426
+ISIC_0028246,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028246.jpg,nv,45.0,male,abdomen,HAM_0005538
+ISIC_0031004,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031004.jpg,nv,80.0,male,back,HAM_0001408
+ISIC_0025404,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025404.jpg,nv,80.0,male,abdomen,HAM_0000251
+ISIC_0025296,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025296.jpg,nv,50.0,female,trunk,HAM_0006862
+ISIC_0027807,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027807.jpg,nv,45.0,female,upper extremity,HAM_0005406
+ISIC_0030037,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030037.jpg,nv,55.0,female,lower extremity,HAM_0002568
+ISIC_0026906,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026906.jpg,nv,55.0,female,abdomen,HAM_0005782
+ISIC_0026200,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026200.jpg,nv,50.0,female,lower extremity,HAM_0007198
+ISIC_0026224,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026224.jpg,nv,45.0,male,foot,HAM_0005589
+ISIC_0028902,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028902.jpg,nv,40.0,female,lower extremity,HAM_0005426
+ISIC_0028731,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028731.jpg,nv,75.0,female,lower extremity,HAM_0002407
+ISIC_0032413,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032413.jpg,nv,60.0,female,genital,HAM_0004723
+ISIC_0024611,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024611.jpg,nv,50.0,female,back,HAM_0000385
+ISIC_0026708,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026708.jpg,nv,50.0,female,back,HAM_0005850
+ISIC_0029702,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029702.jpg,nv,50.0,male,lower extremity,HAM_0000824
+ISIC_0026965,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026965.jpg,nv,50.0,female,foot,HAM_0000470
+ISIC_0025890,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025890.jpg,nv,50.0,female,lower extremity,HAM_0000646
+ISIC_0032049,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032049.jpg,nv,55.0,female,trunk,HAM_0000839
+ISIC_0031775,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031775.jpg,nv,60.0,male,trunk,HAM_0000946
+ISIC_0029267,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029267.jpg,nv,40.0,female,trunk,HAM_0000975
+ISIC_0030554,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030554.jpg,nv,65.0,female,lower extremity,HAM_0005422
+ISIC_0025135,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025135.jpg,nv,60.0,female,abdomen,HAM_0000530
+ISIC_0029510,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029510.jpg,nv,45.0,male,back,HAM_0001364
+ISIC_0026972,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026972.jpg,nv,45.0,male,lower extremity,HAM_0001251
+ISIC_0024588,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024588.jpg,nv,40.0,male,neck,HAM_0006931
+ISIC_0029806,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029806.jpg,nv,60.0,male,trunk,HAM_0006204
+ISIC_0024671,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024671.jpg,nv,35.0,female,abdomen,HAM_0001098
+ISIC_0029788,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029788.jpg,nv,45.0,female,lower extremity,HAM_0004822
+ISIC_0025704,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025704.jpg,nv,55.0,female,back,HAM_0001253
+ISIC_0026413,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026413.jpg,nv,65.0,male,lower extremity,HAM_0005431
+ISIC_0026259,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026259.jpg,nv,40.0,female,trunk,HAM_0000761
+ISIC_0029874,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029874.jpg,nv,45.0,male,lower extremity,HAM_0003527
+ISIC_0026695,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026695.jpg,nv,55.0,male,abdomen,HAM_0002713
+ISIC_0026904,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026904.jpg,nv,55.0,male,upper extremity,HAM_0004626
+ISIC_0030769,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030769.jpg,nv,35.0,male,abdomen,HAM_0000131
+ISIC_0028896,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028896.jpg,nv,35.0,male,lower extremity,HAM_0005659
+ISIC_0031391,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031391.jpg,nv,45.0,male,back,HAM_0002203
+ISIC_0028976,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028976.jpg,nv,70.0,female,trunk,HAM_0003100
+ISIC_0027228,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027228.jpg,nv,70.0,female,lower extremity,HAM_0001972
+ISIC_0026999,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026999.jpg,nv,60.0,female,trunk,HAM_0006075
+ISIC_0029103,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029103.jpg,nv,40.0,female,trunk,HAM_0004798
+ISIC_0027205,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027205.jpg,nv,40.0,female,lower extremity,HAM_0005706
+ISIC_0026779,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026779.jpg,nv,45.0,male,trunk,HAM_0004728
+ISIC_0032370,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032370.jpg,nv,45.0,male,lower extremity,HAM_0003916
+ISIC_0029071,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029071.jpg,nv,50.0,female,trunk,HAM_0000096
+ISIC_0032121,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032121.jpg,nv,45.0,male,trunk,HAM_0006000
+ISIC_0030087,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030087.jpg,nv,60.0,male,abdomen,HAM_0006248
+ISIC_0026638,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026638.jpg,nv,50.0,female,lower extremity,HAM_0005929
+ISIC_0029925,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029925.jpg,nv,40.0,female,abdomen,HAM_0004061
+ISIC_0027273,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027273.jpg,nv,70.0,male,neck,HAM_0004606
+ISIC_0028875,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028875.jpg,nv,70.0,male,back,HAM_0002492
+ISIC_0028778,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028778.jpg,nv,55.0,female,lower extremity,HAM_0006534
+ISIC_0030584,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030584.jpg,nv,55.0,female,lower extremity,HAM_0005458
+ISIC_0026648,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026648.jpg,nv,55.0,female,lower extremity,HAM_0003994
+ISIC_0027592,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027592.jpg,nv,50.0,female,trunk,HAM_0006960
+ISIC_0028492,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028492.jpg,nv,50.0,female,foot,HAM_0004323
+ISIC_0026860,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026860.jpg,nv,35.0,female,abdomen,HAM_0000334
+ISIC_0030379,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030379.jpg,nv,40.0,male,lower extremity,HAM_0003416
+ISIC_0030213,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030213.jpg,nv,45.0,male,lower extremity,HAM_0005622
+ISIC_0025733,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025733.jpg,nv,50.0,male,trunk,HAM_0006509
+ISIC_0031587,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031587.jpg,nv,60.0,male,upper extremity,HAM_0001676
+ISIC_0029782,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029782.jpg,nv,60.0,male,trunk,HAM_0007120
+ISIC_0032255,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032255.jpg,nv,55.0,male,lower extremity,HAM_0005145
+ISIC_0029710,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029710.jpg,nv,45.0,female,back,HAM_0002068
+ISIC_0026864,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026864.jpg,nv,40.0,male,trunk,HAM_0000420
+ISIC_0027655,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027655.jpg,nv,50.0,female,lower extremity,HAM_0006436
+ISIC_0030395,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030395.jpg,nv,40.0,male,trunk,HAM_0002980
+ISIC_0031878,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031878.jpg,nv,70.0,male,trunk,HAM_0004950
+ISIC_0027543,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027543.jpg,nv,50.0,female,upper extremity,HAM_0006952
+ISIC_0024603,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024603.jpg,nv,65.0,female,lower extremity,HAM_0006141
+ISIC_0028204,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028204.jpg,nv,40.0,male,abdomen,HAM_0002401
+ISIC_0031551,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031551.jpg,nv,50.0,female,lower extremity,HAM_0001674
+ISIC_0026918,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026918.jpg,nv,50.0,male,trunk,HAM_0006573
+ISIC_0026642,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026642.jpg,nv,50.0,male,back,HAM_0004855
+ISIC_0026331,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026331.jpg,nv,45.0,male,trunk,HAM_0005940
+ISIC_0025333,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025333.jpg,nv,50.0,female,abdomen,HAM_0007515
+ISIC_0024953,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024953.jpg,nv,45.0,female,trunk,HAM_0000252
+ISIC_0029948,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029948.jpg,nv,35.0,male,back,HAM_0001988
+ISIC_0027934,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027934.jpg,nv,65.0,female,back,HAM_0001398
+ISIC_0030895,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030895.jpg,nv,55.0,male,foot,HAM_0006647
+ISIC_0025770,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025770.jpg,nv,45.0,female,lower extremity,HAM_0004913
+ISIC_0025207,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025207.jpg,nv,50.0,female,lower extremity,HAM_0007353
+ISIC_0029754,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029754.jpg,nv,50.0,male,abdomen,HAM_0000389
+ISIC_0031058,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031058.jpg,nv,40.0,male,upper extremity,HAM_0003180
+ISIC_0028886,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028886.jpg,nv,60.0,female,back,HAM_0002995
+ISIC_0026204,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026204.jpg,nv,55.0,male,trunk,HAM_0000670
+ISIC_0024442,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024442.jpg,nv,55.0,female,foot,HAM_0001439
+ISIC_0030043,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030043.jpg,nv,45.0,female,unknown,HAM_0002549
+ISIC_0029131,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029131.jpg,nv,35.0,male,trunk,HAM_0006985
+ISIC_0024591,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024591.jpg,nv,35.0,male,back,HAM_0006068
+ISIC_0031067,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031067.jpg,nv,45.0,female,trunk,HAM_0005615
+ISIC_0029325,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029325.jpg,nv,45.0,male,lower extremity,HAM_0000026
+ISIC_0030071,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030071.jpg,nv,50.0,female,foot,HAM_0002883
+ISIC_0029766,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029766.jpg,nv,40.0,female,lower extremity,HAM_0004023
+ISIC_0030201,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030201.jpg,nv,50.0,female,lower extremity,HAM_0005638
+ISIC_0025496,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025496.jpg,nv,45.0,female,trunk,HAM_0002996
+ISIC_0031003,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031003.jpg,nv,40.0,female,trunk,HAM_0001578
+ISIC_0027001,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027001.jpg,nv,40.0,female,trunk,HAM_0003134
+ISIC_0024810,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024810.jpg,nv,50.0,male,trunk,HAM_0001628
+ISIC_0029207,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029207.jpg,nv,45.0,female,trunk,HAM_0003477
+ISIC_0027586,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027586.jpg,nv,45.0,female,trunk,HAM_0001421
+ISIC_0029234,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029234.jpg,nv,35.0,male,lower extremity,HAM_0006758
+ISIC_0027748,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027748.jpg,nv,65.0,male,lower extremity,HAM_0004228
+ISIC_0028697,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028697.jpg,nv,80.0,male,lower extremity,HAM_0001585
+ISIC_0028893,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028893.jpg,nv,35.0,male,back,HAM_0007556
+ISIC_0030078,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030078.jpg,nv,50.0,female,upper extremity,HAM_0005796
+ISIC_0030601,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030601.jpg,nv,45.0,male,trunk,HAM_0004488
+ISIC_0032085,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032085.jpg,nv,55.0,female,back,HAM_0003377
+ISIC_0031251,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031251.jpg,nv,45.0,female,back,HAM_0005012
+ISIC_0028273,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028273.jpg,nv,20.0,female,neck,HAM_0000242
+ISIC_0030551,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030551.jpg,nv,60.0,female,lower extremity,HAM_0004445
+ISIC_0025848,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025848.jpg,nv,60.0,male,abdomen,HAM_0002310
+ISIC_0030325,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030325.jpg,nv,60.0,male,upper extremity,HAM_0004493
+ISIC_0029078,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029078.jpg,nv,60.0,male,trunk,HAM_0004808
+ISIC_0027830,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027830.jpg,nv,70.0,male,lower extremity,HAM_0001516
+ISIC_0025479,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025479.jpg,nv,35.0,male,back,HAM_0005220
+ISIC_0024451,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024451.jpg,nv,35.0,male,lower extremity,HAM_0003737
+ISIC_0029901,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029901.jpg,nv,35.0,male,lower extremity,HAM_0006022
+ISIC_0024390,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024390.jpg,nv,65.0,male,upper extremity,HAM_0003645
+ISIC_0030638,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030638.jpg,nv,65.0,male,abdomen,HAM_0005976
+ISIC_0025686,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025686.jpg,nv,65.0,male,trunk,HAM_0002146
+ISIC_0030472,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030472.jpg,nv,65.0,male,trunk,HAM_0005161
+ISIC_0024912,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024912.jpg,nv,45.0,male,trunk,HAM_0007613
+ISIC_0025014,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025014.jpg,nv,35.0,male,trunk,HAM_0000066
+ISIC_0031439,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031439.jpg,nv,65.0,male,upper extremity,HAM_0001779
+ISIC_0024541,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024541.jpg,nv,65.0,male,lower extremity,HAM_0004502
+ISIC_0028138,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028138.jpg,nv,55.0,male,abdomen,HAM_0004111
+ISIC_0029165,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029165.jpg,nv,55.0,male,upper extremity,HAM_0004666
+ISIC_0030185,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030185.jpg,nv,55.0,male,back,HAM_0001204
+ISIC_0029787,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029787.jpg,nv,55.0,male,back,HAM_0004136
+ISIC_0027095,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027095.jpg,nv,50.0,male,lower extremity,HAM_0000537
+ISIC_0024353,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024353.jpg,nv,50.0,male,trunk,HAM_0002847
+ISIC_0030030,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030030.jpg,nv,50.0,female,upper extremity,HAM_0007382
+ISIC_0025933,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025933.jpg,nv,50.0,female,back,HAM_0006095
+ISIC_0026197,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026197.jpg,nv,55.0,female,abdomen,HAM_0003678
+ISIC_0029477,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029477.jpg,nv,85.0,male,trunk,HAM_0004168
+ISIC_0031246,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031246.jpg,nv,55.0,female,abdomen,HAM_0003538
+ISIC_0031899,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031899.jpg,nv,55.0,female,lower extremity,HAM_0002437
+ISIC_0029437,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029437.jpg,nv,55.0,male,back,HAM_0005235
+ISIC_0031530,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031530.jpg,nv,55.0,male,back,HAM_0002852
+ISIC_0030098,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030098.jpg,nv,40.0,female,lower extremity,HAM_0003975
+ISIC_0031265,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031265.jpg,nv,40.0,female,trunk,HAM_0007357
+ISIC_0031936,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031936.jpg,nv,40.0,female,lower extremity,HAM_0002077
+ISIC_0027701,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027701.jpg,nv,45.0,female,upper extremity,HAM_0005653
+ISIC_0032472,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032472.jpg,nv,45.0,female,abdomen,HAM_0002140
+ISIC_0024334,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024334.jpg,nv,45.0,female,trunk,HAM_0001472
+ISIC_0026939,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026939.jpg,nv,45.0,female,trunk,HAM_0000254
+ISIC_0029942,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029942.jpg,nv,45.0,female,lower extremity,HAM_0003211
+ISIC_0027446,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027446.jpg,nv,40.0,male,back,HAM_0002968
+ISIC_0030568,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030568.jpg,nv,50.0,female,upper extremity,HAM_0002406
+ISIC_0026894,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026894.jpg,nv,45.0,female,abdomen,HAM_0006984
+ISIC_0026238,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026238.jpg,nv,45.0,female,trunk,HAM_0001375
+ISIC_0025765,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025765.jpg,nv,45.0,female,trunk,HAM_0006781
+ISIC_0028663,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028663.jpg,nv,60.0,female,lower extremity,HAM_0000635
+ISIC_0029796,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029796.jpg,nv,45.0,male,upper extremity,HAM_0000860
+ISIC_0028522,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028522.jpg,nv,35.0,male,lower extremity,HAM_0004906
+ISIC_0026181,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026181.jpg,nv,35.0,female,back,HAM_0001560
+ISIC_0032332,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032332.jpg,nv,35.0,female,lower extremity,HAM_0004449
+ISIC_0030028,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030028.jpg,nv,40.0,female,upper extremity,HAM_0004645
+ISIC_0031445,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031445.jpg,nv,45.0,male,upper extremity,HAM_0000292
+ISIC_0030633,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030633.jpg,nv,45.0,male,back,HAM_0005391
+ISIC_0029005,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029005.jpg,nv,45.0,male,trunk,HAM_0007318
+ISIC_0032130,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032130.jpg,nv,60.0,male,upper extremity,HAM_0004072
+ISIC_0030715,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030715.jpg,nv,50.0,female,lower extremity,HAM_0003339
+ISIC_0030364,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030364.jpg,nv,45.0,female,back,HAM_0001709
+ISIC_0031722,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031722.jpg,nv,50.0,male,trunk,HAM_0002805
+ISIC_0025916,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025916.jpg,nv,50.0,female,trunk,HAM_0002382
+ISIC_0026375,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026375.jpg,nv,50.0,female,foot,HAM_0004041
+ISIC_0026005,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026005.jpg,nv,45.0,male,back,HAM_0003889
+ISIC_0032458,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032458.jpg,nv,55.0,male,trunk,HAM_0001602
+ISIC_0031562,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031562.jpg,nv,40.0,male,trunk,HAM_0001132
+ISIC_0026447,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026447.jpg,nv,40.0,male,lower extremity,HAM_0003573
+ISIC_0028097,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028097.jpg,nv,55.0,male,trunk,HAM_0006928
+ISIC_0032381,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032381.jpg,nv,55.0,male,lower extremity,HAM_0004904
+ISIC_0030424,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030424.jpg,nv,55.0,male,abdomen,HAM_0006452
+ISIC_0025284,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025284.jpg,nv,75.0,male,trunk,HAM_0003471
+ISIC_0030025,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030025.jpg,nv,50.0,male,trunk,HAM_0003391
+ISIC_0029064,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029064.jpg,nv,60.0,female,lower extremity,HAM_0000134
+ISIC_0029850,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029850.jpg,nv,60.0,female,abdomen,HAM_0006714
+ISIC_0029295,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029295.jpg,nv,40.0,male,abdomen,HAM_0005941
+ISIC_0029185,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029185.jpg,nv,40.0,male,abdomen,HAM_0000890
+ISIC_0030027,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030027.jpg,nv,20.0,male,lower extremity,HAM_0002860
+ISIC_0030044,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030044.jpg,nv,25.0,female,lower extremity,HAM_0001776
+ISIC_0024768,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024768.jpg,nv,35.0,female,trunk,HAM_0003024
+ISIC_0032131,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032131.jpg,nv,35.0,female,upper extremity,HAM_0003173
+ISIC_0030298,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030298.jpg,nv,35.0,female,lower extremity,HAM_0003336
+ISIC_0025673,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025673.jpg,nv,45.0,male,upper extremity,HAM_0005089
+ISIC_0028366,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028366.jpg,nv,45.0,female,lower extremity,HAM_0002435
+ISIC_0026310,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026310.jpg,nv,40.0,male,abdomen,HAM_0004385
+ISIC_0028532,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028532.jpg,nv,35.0,male,abdomen,HAM_0002041
+ISIC_0025609,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025609.jpg,nv,40.0,male,trunk,HAM_0005906
+ISIC_0030437,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030437.jpg,nv,25.0,male,trunk,HAM_0003746
+ISIC_0028011,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028011.jpg,nv,35.0,male,back,HAM_0007489
+ISIC_0029832,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029832.jpg,nv,35.0,male,back,HAM_0000325
+ISIC_0027176,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027176.jpg,nv,30.0,male,abdomen,HAM_0003388
+ISIC_0027750,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027750.jpg,nv,30.0,female,abdomen,HAM_0000461
+ISIC_0028743,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028743.jpg,nv,30.0,female,back,HAM_0001075
+ISIC_0032001,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032001.jpg,nv,30.0,female,lower extremity,HAM_0003019
+ISIC_0025787,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025787.jpg,nv,30.0,female,upper extremity,HAM_0004469
+ISIC_0030162,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030162.jpg,nv,30.0,female,back,HAM_0006468
+ISIC_0027464,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027464.jpg,nv,40.0,female,lower extremity,HAM_0005380
+ISIC_0029065,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029065.jpg,nv,40.0,female,trunk,HAM_0004067
+ISIC_0031242,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031242.jpg,nv,40.0,female,lower extremity,HAM_0003242
+ISIC_0028726,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028726.jpg,nv,40.0,male,back,HAM_0005900
+ISIC_0031566,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031566.jpg,nv,60.0,male,lower extremity,HAM_0002422
+ISIC_0031006,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031006.jpg,nv,55.0,male,abdomen,HAM_0001638
+ISIC_0030889,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030889.jpg,nv,35.0,male,trunk,HAM_0002356
+ISIC_0028300,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028300.jpg,nv,55.0,female,back,HAM_0004092
+ISIC_0026969,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026969.jpg,nv,35.0,female,back,HAM_0005148
+ISIC_0025426,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025426.jpg,nv,60.0,male,trunk,HAM_0006677
+ISIC_0029996,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029996.jpg,nv,60.0,male,lower extremity,HAM_0004001
+ISIC_0032261,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032261.jpg,nv,40.0,male,trunk,HAM_0005025
+ISIC_0031420,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031420.jpg,nv,30.0,female,upper extremity,HAM_0001197
+ISIC_0032477,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032477.jpg,nv,35.0,male,abdomen,HAM_0000430
+ISIC_0024502,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024502.jpg,nv,45.0,male,lower extremity,HAM_0001732
+ISIC_0025455,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025455.jpg,nv,50.0,male,back,HAM_0002504
+ISIC_0031497,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031497.jpg,nv,30.0,female,trunk,HAM_0004774
+ISIC_0030257,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030257.jpg,nv,40.0,female,trunk,HAM_0001370
+ISIC_0031347,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031347.jpg,nv,40.0,female,back,HAM_0003494
+ISIC_0025347,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025347.jpg,nv,35.0,female,trunk,HAM_0003776
+ISIC_0032485,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032485.jpg,nv,35.0,female,abdomen,HAM_0003443
+ISIC_0028178,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028178.jpg,nv,30.0,female,upper extremity,HAM_0006083
+ISIC_0031195,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031195.jpg,nv,40.0,male,back,HAM_0007277
+ISIC_0030388,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030388.jpg,nv,40.0,female,trunk,HAM_0000936
+ISIC_0026578,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026578.jpg,nv,40.0,female,abdomen,HAM_0000601
+ISIC_0031472,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031472.jpg,nv,40.0,female,lower extremity,HAM_0003316
+ISIC_0027169,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027169.jpg,nv,50.0,male,back,HAM_0003844
+ISIC_0027515,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027515.jpg,nv,40.0,female,foot,HAM_0003687
+ISIC_0030205,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030205.jpg,nv,35.0,female,trunk,HAM_0007322
+ISIC_0029395,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029395.jpg,nv,65.0,female,lower extremity,HAM_0006958
+ISIC_0026517,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026517.jpg,nv,65.0,female,back,HAM_0003532
+ISIC_0029821,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029821.jpg,nv,50.0,male,abdomen,HAM_0005707
+ISIC_0031906,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031906.jpg,nv,50.0,male,abdomen,HAM_0004893
+ISIC_0026334,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026334.jpg,nv,50.0,male,abdomen,HAM_0003550
+ISIC_0030673,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030673.jpg,nv,50.0,male,lower extremity,HAM_0001144
+ISIC_0026031,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026031.jpg,nv,60.0,male,back,HAM_0003261
+ISIC_0028904,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028904.jpg,nv,55.0,female,upper extremity,HAM_0003269
+ISIC_0028732,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028732.jpg,nv,70.0,male,lower extremity,HAM_0002780
+ISIC_0031695,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031695.jpg,nv,45.0,female,upper extremity,HAM_0005402
+ISIC_0029869,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029869.jpg,nv,45.0,female,upper extremity,HAM_0004995
+ISIC_0032267,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032267.jpg,nv,45.0,female,upper extremity,HAM_0004605
+ISIC_0027757,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027757.jpg,nv,10.0,female,back,HAM_0007112
+ISIC_0026819,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026819.jpg,nv,10.0,female,back,HAM_0007112
+ISIC_0028791,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028791.jpg,nv,30.0,male,lower extremity,HAM_0006032
+ISIC_0027501,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027501.jpg,nv,30.0,male,lower extremity,HAM_0006032
+ISIC_0026519,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026519.jpg,nv,40.0,male,lower extremity,HAM_0007255
+ISIC_0030672,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030672.jpg,nv,40.0,male,lower extremity,HAM_0007255
+ISIC_0030980,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030980.jpg,nv,20.0,male,back,HAM_0003303
+ISIC_0024597,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024597.jpg,nv,20.0,male,back,HAM_0003303
+ISIC_0024594,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024594.jpg,nv,40.0,male,trunk,HAM_0000892
+ISIC_0029845,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029845.jpg,nv,40.0,male,trunk,HAM_0000892
+ISIC_0027444,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027444.jpg,nv,80.0,female,lower extremity,HAM_0006347
+ISIC_0025702,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025702.jpg,nv,80.0,female,lower extremity,HAM_0006347
+ISIC_0031617,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031617.jpg,nv,55.0,female,abdomen,HAM_0000376
+ISIC_0025173,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025173.jpg,nv,55.0,female,abdomen,HAM_0000376
+ISIC_0028576,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028576.jpg,nv,30.0,female,trunk,HAM_0001684
+ISIC_0029790,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029790.jpg,nv,30.0,female,trunk,HAM_0001684
+ISIC_0031404,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031404.jpg,nv,70.0,male,back,HAM_0006150
+ISIC_0026569,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026569.jpg,nv,70.0,male,back,HAM_0006150
+ISIC_0024824,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024824.jpg,nv,50.0,female,upper extremity,HAM_0005188
+ISIC_0030666,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030666.jpg,nv,50.0,female,upper extremity,HAM_0005188
+ISIC_0024855,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024855.jpg,nv,30.0,female,back,HAM_0003627
+ISIC_0026497,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026497.jpg,nv,30.0,female,back,HAM_0003627
+ISIC_0027408,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027408.jpg,nv,80.0,male,back,HAM_0001696
+ISIC_0030460,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030460.jpg,nv,80.0,male,back,HAM_0001696
+ISIC_0030194,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030194.jpg,nv,15.0,female,neck,HAM_0000589
+ISIC_0027103,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027103.jpg,nv,15.0,female,neck,HAM_0000589
+ISIC_0026148,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026148.jpg,nv,45.0,male,upper extremity,HAM_0002975
+ISIC_0028810,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028810.jpg,nv,45.0,male,upper extremity,HAM_0002975
+ISIC_0031720,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031720.jpg,nv,45.0,female,lower extremity,HAM_0003222
+ISIC_0026382,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026382.jpg,nv,45.0,female,lower extremity,HAM_0003222
+ISIC_0031676,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031676.jpg,nv,40.0,male,back,HAM_0007553
+ISIC_0032151,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032151.jpg,nv,40.0,male,back,HAM_0007553
+ISIC_0029402,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029402.jpg,nv,30.0,male,lower extremity,HAM_0007579
+ISIC_0027571,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027571.jpg,nv,30.0,male,lower extremity,HAM_0007579
+ISIC_0029846,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029846.jpg,nv,30.0,male,upper extremity,HAM_0002484
+ISIC_0029194,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029194.jpg,nv,30.0,male,upper extremity,HAM_0002484
+ISIC_0026215,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026215.jpg,nv,55.0,female,upper extremity,HAM_0005519
+ISIC_0032029,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032029.jpg,nv,55.0,female,upper extremity,HAM_0005519
+ISIC_0028534,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028534.jpg,nv,45.0,male,back,HAM_0003653
+ISIC_0030139,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030139.jpg,nv,45.0,male,back,HAM_0003653
+ISIC_0031674,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031674.jpg,nv,40.0,male,scalp,HAM_0006837
+ISIC_0025834,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025834.jpg,nv,40.0,male,scalp,HAM_0006837
+ISIC_0028235,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028235.jpg,nv,15.0,male,face,HAM_0002231
+ISIC_0026186,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026186.jpg,nv,45.0,male,foot,HAM_0002106
+ISIC_0025156,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025156.jpg,nv,45.0,male,foot,HAM_0002106
+ISIC_0025598,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025598.jpg,nv,65.0,female,upper extremity,HAM_0004986
+ISIC_0029826,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029826.jpg,nv,50.0,male,back,HAM_0005159
+ISIC_0025352,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025352.jpg,nv,50.0,male,back,HAM_0005159
+ISIC_0025641,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025641.jpg,nv,60.0,female,lower extremity,HAM_0003468
+ISIC_0033251,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033251.jpg,nv,45.0,male,back,HAM_0001651
+ISIC_0033402,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033402.jpg,nv,45.0,male,back,HAM_0001651
+ISIC_0034204,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034204.jpg,nv,45.0,male,back,HAM_0001651
+ISIC_0033852,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033852.jpg,nv,45.0,male,trunk,HAM_0004708
+ISIC_0033775,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033775.jpg,nv,45.0,male,trunk,HAM_0004708
+ISIC_0033561,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033561.jpg,nv,45.0,male,trunk,HAM_0004708
+ISIC_0033032,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033032.jpg,nv,40.0,male,back,HAM_0003505
+ISIC_0034227,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034227.jpg,nv,40.0,male,back,HAM_0003505
+ISIC_0033563,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033563.jpg,nv,40.0,male,back,HAM_0003505
+ISIC_0026584,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026584.jpg,nv,75.0,male,upper extremity,HAM_0000459
+ISIC_0030546,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030546.jpg,nv,20.0,female,back,HAM_0006810
+ISIC_0026177,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026177.jpg,nv,30.0,male,trunk,HAM_0006583
+ISIC_0032950,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032950.jpg,nv,50.0,female,chest,HAM_0001097
+ISIC_0034156,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034156.jpg,nv,50.0,female,chest,HAM_0001097
+ISIC_0028780,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028780.jpg,nv,25.0,male,back,HAM_0000138
+ISIC_0029902,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029902.jpg,nv,25.0,male,back,HAM_0000138
+ISIC_0029636,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029636.jpg,nv,60.0,female,chest,HAM_0001220
+ISIC_0027931,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027931.jpg,nv,60.0,female,chest,HAM_0001220
+ISIC_0034146,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034146.jpg,nv,40.0,male,abdomen,HAM_0001046
+ISIC_0033964,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033964.jpg,nv,40.0,male,abdomen,HAM_0001046
+ISIC_0032951,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032951.jpg,nv,40.0,male,abdomen,HAM_0001046
+ISIC_0033059,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033059.jpg,nv,35.0,male,upper extremity,HAM_0001400
+ISIC_0033113,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033113.jpg,nv,35.0,male,upper extremity,HAM_0001400
+ISIC_0033547,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033547.jpg,nv,35.0,male,upper extremity,HAM_0001400
+ISIC_0032666,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032666.jpg,nv,55.0,male,chest,HAM_0002574
+ISIC_0033157,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033157.jpg,nv,55.0,male,chest,HAM_0002574
+ISIC_0032811,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032811.jpg,nv,55.0,male,chest,HAM_0002574
+ISIC_0032821,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032821.jpg,nv,70.0,female,lower extremity,HAM_0006391
+ISIC_0032783,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032783.jpg,nv,70.0,female,lower extremity,HAM_0006391
+ISIC_0034139,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034139.jpg,nv,70.0,female,lower extremity,HAM_0006391
+ISIC_0033633,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033633.jpg,nv,45.0,female,lower extremity,HAM_0005265
+ISIC_0034199,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034199.jpg,nv,45.0,female,lower extremity,HAM_0005265
+ISIC_0032998,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032998.jpg,nv,45.0,female,lower extremity,HAM_0005265
+ISIC_0033984,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033984.jpg,nv,45.0,female,back,HAM_0002878
+ISIC_0032640,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032640.jpg,nv,45.0,female,back,HAM_0002878
+ISIC_0032568,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032568.jpg,nv,40.0,female,acral,HAM_0007005
+ISIC_0033126,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033126.jpg,nv,40.0,female,acral,HAM_0007005
+ISIC_0034099,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034099.jpg,nv,40.0,female,acral,HAM_0007005
+ISIC_0032885,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032885.jpg,nv,35.0,male,trunk,HAM_0003713
+ISIC_0033291,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033291.jpg,nv,35.0,male,trunk,HAM_0003713
+ISIC_0034102,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034102.jpg,nv,35.0,male,trunk,HAM_0003713
+ISIC_0032999,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032999.jpg,nv,45.0,male,foot,HAM_0007259
+ISIC_0032669,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032669.jpg,nv,45.0,male,foot,HAM_0007259
+ISIC_0033236,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033236.jpg,nv,45.0,male,foot,HAM_0007259
+ISIC_0033906,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033906.jpg,nv,55.0,female,trunk,HAM_0005433
+ISIC_0033298,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033298.jpg,nv,55.0,female,trunk,HAM_0005433
+ISIC_0034210,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034210.jpg,nv,55.0,female,trunk,HAM_0005433
+ISIC_0033091,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033091.jpg,nv,15.0,female,lower extremity,HAM_0003824
+ISIC_0034138,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034138.jpg,nv,15.0,female,lower extremity,HAM_0003824
+ISIC_0032971,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032971.jpg,nv,15.0,female,lower extremity,HAM_0003824
+ISIC_0034286,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034286.jpg,nv,0.0,male,upper extremity,HAM_0004176
+ISIC_0033373,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033373.jpg,nv,0.0,male,upper extremity,HAM_0004176
+ISIC_0033096,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033096.jpg,nv,40.0,male,back,HAM_0006158
+ISIC_0033972,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033972.jpg,nv,40.0,male,back,HAM_0006158
+ISIC_0033367,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033367.jpg,nv,40.0,male,back,HAM_0006158
+ISIC_0034179,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034179.jpg,nv,20.0,female,back,HAM_0001133
+ISIC_0034206,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034206.jpg,nv,20.0,female,back,HAM_0001133
+ISIC_0032980,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032980.jpg,nv,20.0,female,back,HAM_0001133
+ISIC_0032512,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032512.jpg,nv,40.0,female,back,HAM_0003735
+ISIC_0034149,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034149.jpg,nv,40.0,female,back,HAM_0003735
+ISIC_0033800,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033800.jpg,nv,40.0,female,back,HAM_0003735
+ISIC_0033621,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033621.jpg,nv,35.0,female,trunk,HAM_0001889
+ISIC_0034116,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034116.jpg,nv,35.0,female,trunk,HAM_0001889
+ISIC_0034073,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034073.jpg,nv,35.0,female,trunk,HAM_0001889
+ISIC_0032702,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032702.jpg,nv,65.0,male,lower extremity,HAM_0004814
+ISIC_0033667,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033667.jpg,nv,65.0,male,lower extremity,HAM_0004814
+ISIC_0033107,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033107.jpg,nv,65.0,male,lower extremity,HAM_0004814
+ISIC_0034088,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034088.jpg,nv,35.0,female,abdomen,HAM_0006666
+ISIC_0034268,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034268.jpg,nv,35.0,female,abdomen,HAM_0006666
+ISIC_0032908,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032908.jpg,nv,35.0,female,abdomen,HAM_0006666
+ISIC_0034203,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034203.jpg,nv,40.0,female,back,HAM_0005190
+ISIC_0033311,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033311.jpg,nv,40.0,female,back,HAM_0005190
+ISIC_0032700,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032700.jpg,nv,40.0,female,back,HAM_0005190
+ISIC_0032707,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032707.jpg,nv,55.0,male,back,HAM_0007124
+ISIC_0034311,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034311.jpg,nv,55.0,male,back,HAM_0007124
+ISIC_0034213,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034213.jpg,nv,55.0,male,lower extremity,HAM_0005194
+ISIC_0032561,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032561.jpg,nv,55.0,male,lower extremity,HAM_0005194
+ISIC_0033839,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033839.jpg,nv,55.0,male,lower extremity,HAM_0005194
+ISIC_0032858,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032858.jpg,nv,40.0,male,back,HAM_0007148
+ISIC_0033965,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033965.jpg,nv,40.0,male,back,HAM_0007148
+ISIC_0033940,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033940.jpg,nv,20.0,female,lower extremity,HAM_0002208
+ISIC_0033818,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033818.jpg,nv,20.0,female,lower extremity,HAM_0002208
+ISIC_0034029,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034029.jpg,nv,20.0,female,lower extremity,HAM_0002208
+ISIC_0032582,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032582.jpg,nv,50.0,female,back,HAM_0004038
+ISIC_0033052,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033052.jpg,nv,50.0,female,back,HAM_0004038
+ISIC_0032990,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032990.jpg,nv,50.0,female,back,HAM_0004038
+ISIC_0033519,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033519.jpg,nv,40.0,male,abdomen,HAM_0001908
+ISIC_0032851,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032851.jpg,nv,40.0,male,abdomen,HAM_0001908
+ISIC_0033943,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033943.jpg,nv,70.0,male,back,HAM_0001839
+ISIC_0033434,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033434.jpg,nv,70.0,male,back,HAM_0001839
+ISIC_0033006,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033006.jpg,nv,5.0,female,foot,HAM_0003744
+ISIC_0032518,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032518.jpg,nv,5.0,female,foot,HAM_0003744
+ISIC_0033548,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033548.jpg,nv,5.0,female,foot,HAM_0003744
+ISIC_0033077,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033077.jpg,nv,45.0,male,back,HAM_0007433
+ISIC_0033951,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033951.jpg,nv,45.0,male,back,HAM_0007433
+ISIC_0033149,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033149.jpg,nv,45.0,male,back,HAM_0007433
+ISIC_0034285,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034285.jpg,nv,15.0,female,lower extremity,HAM_0001673
+ISIC_0033966,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033966.jpg,nv,15.0,female,lower extremity,HAM_0001673
+ISIC_0031290,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031290.jpg,nv,60.0,female,lower extremity,HAM_0001872
+ISIC_0033960,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033960.jpg,nv,35.0,female,trunk,HAM_0003535
+ISIC_0033259,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033259.jpg,nv,35.0,female,trunk,HAM_0003535
+ISIC_0033403,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033403.jpg,nv,35.0,female,trunk,HAM_0003535
+ISIC_0034278,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034278.jpg,nv,35.0,male,back,HAM_0004375
+ISIC_0033102,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033102.jpg,nv,35.0,male,back,HAM_0004375
+ISIC_0032380,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032380.jpg,nv,30.0,female,back,HAM_0003248
+ISIC_0025447,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025447.jpg,nv,30.0,female,back,HAM_0003248
+ISIC_0033148,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033148.jpg,nv,45.0,female,abdomen,HAM_0002519
+ISIC_0033109,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033109.jpg,nv,45.0,female,abdomen,HAM_0002519
+ISIC_0032986,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032986.jpg,nv,45.0,female,abdomen,HAM_0002519
+ISIC_0032752,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032752.jpg,nv,50.0,male,abdomen,HAM_0007052
+ISIC_0033794,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033794.jpg,nv,50.0,male,abdomen,HAM_0007052
+ISIC_0032896,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032896.jpg,nv,15.0,female,hand,HAM_0004063
+ISIC_0034166,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034166.jpg,nv,15.0,female,hand,HAM_0004063
+ISIC_0032588,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032588.jpg,nv,25.0,male,unknown,HAM_0002600
+ISIC_0031053,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031053.jpg,nv,30.0,male,lower extremity,HAM_0001052
+ISIC_0031848,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031848.jpg,nv,40.0,male,chest,HAM_0001136
+ISIC_0025972,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025972.jpg,nv,75.0,male,trunk,HAM_0007164
+ISIC_0031923,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031923.jpg,nv,40.0,female,lower extremity,HAM_0007195
+ISIC_0028487,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028487.jpg,nv,35.0,male,back,HAM_0003891
+ISIC_0024458,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024458.jpg,nv,30.0,male,chest,HAM_0005590
+ISIC_0030232,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030232.jpg,nv,20.0,female,lower extremity,HAM_0005092
+ISIC_0024361,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024361.jpg,nv,35.0,male,chest,HAM_0005605
+ISIC_0027285,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027285.jpg,nv,40.0,female,foot,HAM_0005902
+ISIC_0028868,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028868.jpg,nv,30.0,male,chest,HAM_0004450
+ISIC_0028894,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028894.jpg,nv,60.0,female,abdomen,HAM_0003639
+ISIC_0029664,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029664.jpg,nv,55.0,female,upper extremity,HAM_0006754
+ISIC_0029276,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029276.jpg,nv,25.0,male,lower extremity,HAM_0004719
+ISIC_0028544,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028544.jpg,nv,55.0,male,back,HAM_0003044
+ISIC_0029313,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029313.jpg,nv,30.0,male,lower extremity,HAM_0006041
+ISIC_0030508,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030508.jpg,nv,30.0,male,lower extremity,HAM_0006041
+ISIC_0029188,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029188.jpg,nv,60.0,female,lower extremity,HAM_0001872
+ISIC_0027800,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027800.jpg,nv,60.0,female,lower extremity,HAM_0001872
+ISIC_0026841,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026841.jpg,nv,75.0,female,lower extremity,HAM_0003833
+ISIC_0025945,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025945.jpg,nv,75.0,female,lower extremity,HAM_0003833
+ISIC_0031149,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031149.jpg,nv,75.0,female,lower extremity,HAM_0003833
+ISIC_0027208,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027208.jpg,nv,30.0,female,lower extremity,HAM_0001715
+ISIC_0032368,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032368.jpg,nv,30.0,female,lower extremity,HAM_0001715
+ISIC_0029504,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029504.jpg,nv,30.0,female,lower extremity,HAM_0001715
+ISIC_0032227,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032227.jpg,nv,35.0,male,trunk,HAM_0000963
+ISIC_0026305,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026305.jpg,nv,60.0,male,back,HAM_0002216
+ISIC_0028454,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028454.jpg,nv,60.0,male,back,HAM_0002216
+ISIC_0030945,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030945.jpg,nv,75.0,male,face,HAM_0004443
+ISIC_0028510,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028510.jpg,nv,30.0,female,foot,HAM_0002835
+ISIC_0026030,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026030.jpg,nv,50.0,female,lower extremity,HAM_0003580
+ISIC_0028758,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028758.jpg,nv,75.0,male,face,HAM_0004443
+ISIC_0028167,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028167.jpg,nv,65.0,female,lower extremity,HAM_0007456
+ISIC_0028216,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028216.jpg,nv,55.0,male,lower extremity,HAM_0007049
+ISIC_0031510,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031510.jpg,nv,60.0,male,neck,HAM_0000525
+ISIC_0031483,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031483.jpg,nv,25.0,male,lower extremity,HAM_0002298
+ISIC_0032436,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032436.jpg,nv,50.0,female,back,HAM_0001207
+ISIC_0027224,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027224.jpg,nv,30.0,male,back,HAM_0002668
+ISIC_0026784,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026784.jpg,nv,30.0,male,back,HAM_0002668
+ISIC_0031015,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031015.jpg,nv,60.0,male,back,HAM_0007518
+ISIC_0032163,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032163.jpg,nv,50.0,male,back,HAM_0001427
+ISIC_0030121,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030121.jpg,nv,35.0,male,back,HAM_0003088
+ISIC_0029736,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029736.jpg,nv,35.0,male,back,HAM_0003088
+ISIC_0026592,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026592.jpg,nv,25.0,female,chest,HAM_0001406
+ISIC_0030914,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030914.jpg,nv,25.0,female,chest,HAM_0001406
+ISIC_0031117,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031117.jpg,nv,70.0,male,back,HAM_0005176
+ISIC_0029349,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029349.jpg,nv,25.0,female,back,HAM_0000771
+ISIC_0032047,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032047.jpg,nv,50.0,female,unknown,HAM_0005568
+ISIC_0029369,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029369.jpg,nv,45.0,male,back,HAM_0004505
+ISIC_0029645,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029645.jpg,nv,40.0,male,back,HAM_0000225
+ISIC_0028983,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028983.jpg,nv,35.0,female,back,HAM_0000674
+ISIC_0030180,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030180.jpg,nv,30.0,male,lower extremity,HAM_0000362
+ISIC_0026043,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026043.jpg,nv,30.0,male,lower extremity,HAM_0000362
+ISIC_0026588,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026588.jpg,nv,60.0,male,back,HAM_0003821
+ISIC_0026053,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026053.jpg,nv,70.0,male,back,HAM_0001319
+ISIC_0028599,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028599.jpg,nv,70.0,male,back,HAM_0001319
+ISIC_0031919,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031919.jpg,nv,65.0,male,back,HAM_0004681
+ISIC_0030535,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030535.jpg,nv,60.0,male,lower extremity,HAM_0001762
+ISIC_0025289,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025289.jpg,nv,50.0,male,back,HAM_0006110
+ISIC_0030219,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030219.jpg,nv,70.0,female,back,HAM_0006681
+ISIC_0026560,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026560.jpg,nv,45.0,female,lower extremity,HAM_0000896
+ISIC_0025051,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025051.jpg,nv,45.0,female,lower extremity,HAM_0000896
+ISIC_0029614,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029614.jpg,nv,40.0,male,back,HAM_0006684
+ISIC_0024781,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024781.jpg,nv,35.0,male,hand,HAM_0003919
+ISIC_0032327,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032327.jpg,nv,80.0,male,back,HAM_0004806
+ISIC_0030873,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030873.jpg,nv,45.0,male,abdomen,HAM_0005745
+ISIC_0028355,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028355.jpg,nv,30.0,female,hand,HAM_0005666
+ISIC_0025171,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025171.jpg,nv,30.0,female,hand,HAM_0005666
+ISIC_0025463,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025463.jpg,nv,50.0,male,upper extremity,HAM_0007075
+ISIC_0028179,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028179.jpg,nv,55.0,male,lower extremity,HAM_0007049
+ISIC_0032405,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032405.jpg,nv,35.0,female,upper extremity,HAM_0001455
+ISIC_0031933,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031933.jpg,nv,35.0,female,upper extremity,HAM_0001455
+ISIC_0024514,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024514.jpg,nv,50.0,male,back,HAM_0002201
+ISIC_0031031,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031031.jpg,nv,80.0,male,back,HAM_0004806
+ISIC_0032459,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032459.jpg,nv,45.0,female,lower extremity,HAM_0003590
+ISIC_0032195,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032195.jpg,nv,50.0,male,upper extremity,HAM_0007075
+ISIC_0027091,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027091.jpg,nv,15.0,male,foot,HAM_0001617
+ISIC_0029026,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029026.jpg,nv,40.0,male,neck,HAM_0002905
+ISIC_0030598,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030598.jpg,nv,50.0,male,scalp,HAM_0001891
+ISIC_0031871,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031871.jpg,nv,45.0,female,abdomen,HAM_0006225
+ISIC_0029075,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029075.jpg,nv,45.0,female,abdomen,HAM_0006225
+ISIC_0028887,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028887.jpg,nv,45.0,female,abdomen,HAM_0006225
+ISIC_0025667,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025667.jpg,nv,30.0,female,back,HAM_0000762
+ISIC_0028982,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028982.jpg,nv,30.0,female,back,HAM_0000762
+ISIC_0027137,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027137.jpg,nv,30.0,female,back,HAM_0000762
+ISIC_0026554,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026554.jpg,nv,75.0,male,back,HAM_0005828
+ISIC_0031085,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031085.jpg,nv,75.0,male,back,HAM_0005828
+ISIC_0032186,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032186.jpg,nv,65.0,male,back,HAM_0000104
+ISIC_0028447,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028447.jpg,nv,45.0,male,abdomen,HAM_0005745
+ISIC_0029079,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029079.jpg,nv,50.0,male,trunk,HAM_0002888
+ISIC_0025571,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025571.jpg,nv,50.0,male,trunk,HAM_0002888
+ISIC_0031131,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031131.jpg,nv,75.0,male,face,HAM_0004443
+ISIC_0031473,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031473.jpg,nv,75.0,male,face,HAM_0004443
+ISIC_0031011,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031011.jpg,nv,35.0,male,hand,HAM_0003919
+ISIC_0028882,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028882.jpg,nv,35.0,male,upper extremity,HAM_0000486
+ISIC_0024466,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024466.jpg,nv,50.0,male,scalp,HAM_0001891
+ISIC_0027997,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027997.jpg,nv,70.0,female,back,HAM_0004008
+ISIC_0028571,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028571.jpg,nv,75.0,male,back,HAM_0006273
+ISIC_0031573,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031573.jpg,nv,75.0,male,back,HAM_0006273
+ISIC_0029771,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029771.jpg,nv,45.0,female,abdomen,HAM_0004656
+ISIC_0027475,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027475.jpg,nv,45.0,female,abdomen,HAM_0004656
+ISIC_0031913,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031913.jpg,nv,65.0,male,back,HAM_0000104
+ISIC_0028865,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028865.jpg,nv,45.0,male,back,HAM_0004600
+ISIC_0028464,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028464.jpg,nv,45.0,male,back,HAM_0004600
+ISIC_0030151,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030151.jpg,nv,65.0,female,upper extremity,HAM_0004614
+ISIC_0032344,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032344.jpg,nv,35.0,male,hand,HAM_0003919
+ISIC_0027262,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027262.jpg,nv,45.0,female,lower extremity,HAM_0003590
+ISIC_0024916,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024916.jpg,nv,45.0,female,lower extremity,HAM_0003590
+ISIC_0031611,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031611.jpg,nv,60.0,male,abdomen,HAM_0003710
+ISIC_0032074,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032074.jpg,nv,60.0,male,abdomen,HAM_0003710
+ISIC_0024377,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024377.jpg,nv,45.0,female,lower extremity,HAM_0002088
+ISIC_0026711,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026711.jpg,nv,50.0,male,chest,HAM_0007030
+ISIC_0026580,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026580.jpg,nv,60.0,male,lower extremity,HAM_0005008
+ISIC_0030919,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030919.jpg,nv,60.0,male,lower extremity,HAM_0005008
+ISIC_0028686,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028686.jpg,nv,45.0,female,chest,HAM_0005329
+ISIC_0030940,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030940.jpg,nv,55.0,male,scalp,HAM_0002189
+ISIC_0029208,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029208.jpg,nv,35.0,male,ear,HAM_0000604
+ISIC_0025166,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025166.jpg,nv,0.0,female,upper extremity,HAM_0001689
+ISIC_0028938,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028938.jpg,nv,0.0,female,upper extremity,HAM_0001689
+ISIC_0026218,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026218.jpg,nv,30.0,male,trunk,HAM_0001541
+ISIC_0028766,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028766.jpg,nv,30.0,male,trunk,HAM_0001541
+ISIC_0030977,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030977.jpg,nv,55.0,male,back,HAM_0005154
+ISIC_0024762,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024762.jpg,nv,55.0,male,back,HAM_0005154
+ISIC_0025168,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025168.jpg,nv,10.0,female,upper extremity,HAM_0003035
+ISIC_0024617,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024617.jpg,nv,10.0,female,upper extremity,HAM_0003035
+ISIC_0029140,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029140.jpg,nv,25.0,male,back,HAM_0004646
+ISIC_0030557,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030557.jpg,nv,25.0,male,back,HAM_0004646
+ISIC_0029091,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029091.jpg,nv,5.0,male,trunk,HAM_0002832
+ISIC_0032026,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032026.jpg,nv,5.0,male,trunk,HAM_0002832
+ISIC_0026749,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026749.jpg,nv,25.0,female,foot,HAM_0004777
+ISIC_0029895,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029895.jpg,nv,25.0,female,foot,HAM_0004777
+ISIC_0028658,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028658.jpg,nv,10.0,male,abdomen,HAM_0004703
+ISIC_0029537,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029537.jpg,nv,5.0,female,hand,HAM_0002147
+ISIC_0031395,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031395.jpg,nv,80.0,male,upper extremity,HAM_0005974
+ISIC_0033313,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033313.jpg,nv,45.0,female,unknown,HAM_0003362
+ISIC_0033105,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033105.jpg,nv,45.0,female,unknown,HAM_0003356
+ISIC_0032572,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032572.jpg,nv,45.0,female,unknown,HAM_0003356
+ISIC_0032912,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032912.jpg,nv,45.0,female,unknown,HAM_0003357
+ISIC_0029808,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029808.jpg,nv,75.0,male,back,HAM_0003540
+ISIC_0034163,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034163.jpg,nv,40.0,male,trunk,HAM_0005263
+ISIC_0034277,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034277.jpg,nv,40.0,male,trunk,HAM_0005263
+ISIC_0034147,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034147.jpg,nv,40.0,male,trunk,HAM_0005263
+ISIC_0033247,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033247.jpg,nv,40.0,male,trunk,HAM_0005263
+ISIC_0033918,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033918.jpg,nv,40.0,male,trunk,HAM_0005263
+ISIC_0032889,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032889.jpg,nv,40.0,male,trunk,HAM_0005263
+ISIC_0033457,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033457.jpg,nv,55.0,female,trunk,HAM_0005434
+ISIC_0033395,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033395.jpg,nv,20.0,female,lower extremity,HAM_0004392
+ISIC_0033355,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033355.jpg,nv,20.0,female,lower extremity,HAM_0004392
+ISIC_0033095,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033095.jpg,nv,20.0,female,lower extremity,HAM_0004392
+ISIC_0032528,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032528.jpg,nv,30.0,male,back,HAM_0003945
+ISIC_0034018,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034018.jpg,nv,30.0,male,back,HAM_0002569
+ISIC_0032575,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032575.jpg,nv,40.0,female,face,HAM_0002074
+ISIC_0032793,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032793.jpg,nv,40.0,female,face,HAM_0002074
+ISIC_0032935,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032935.jpg,nv,30.0,male,back,HAM_0004016
+ISIC_0033896,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033896.jpg,nv,40.0,female,unknown,HAM_0004349
+ISIC_0032571,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032571.jpg,nv,40.0,female,unknown,HAM_0004181
+ISIC_0033882,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033882.jpg,nv,,unknown,unknown,HAM_0006644
+ISIC_0032852,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032852.jpg,nv,,unknown,unknown,HAM_0002164
+ISIC_0034154,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0034154.jpg,nv,,unknown,unknown,HAM_0003561
+ISIC_0032789,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032789.jpg,nv,,unknown,unknown,HAM_0004430
+ISIC_0032814,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032814.jpg,nv,,unknown,unknown,HAM_0001366
+ISIC_0033064,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033064.jpg,nv,,unknown,unknown,HAM_0001209
+ISIC_0027138,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027138.jpg,nv,10.0,male,unknown,HAM_0004370
+ISIC_0024757,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024757.jpg,nv,10.0,male,unknown,HAM_0004370
+ISIC_0027345,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027345.jpg,nv,50.0,female,chest,HAM_0005091
+ISIC_0031148,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031148.jpg,nv,50.0,female,chest,HAM_0005091
+ISIC_0031299,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031299.jpg,nv,55.0,female,chest,HAM_0003384
+ISIC_0028438,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028438.jpg,nv,55.0,female,chest,HAM_0003384
+ISIC_0029915,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0029915.jpg,akiec,50.0,female,face,HAM_0006002
+ISIC_0031198,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031198.jpg,akiec,55.0,female,neck,HAM_0003422
+ISIC_0026362,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026362.jpg,akiec,60.0,female,upper extremity,HAM_0005301
+ISIC_0030794,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030794.jpg,akiec,65.0,male,lower extremity,HAM_0002185
+ISIC_0025358,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025358.jpg,akiec,60.0,female,face,HAM_0004398
+ISIC_0032422,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0032422.jpg,akiec,70.0,male,face,HAM_0004384
+ISIC_0030826,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030826.jpg,akiec,70.0,male,face,HAM_0004384
+ISIC_0026645,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026645.jpg,akiec,65.0,male,back,HAM_0003136
+ISIC_0024771,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024771.jpg,akiec,75.0,male,neck,HAM_0006301
+ISIC_0031692,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031692.jpg,akiec,60.0,male,back,HAM_0007131
+ISIC_0028190,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028190.jpg,akiec,45.0,male,face,HAM_0002734
+ISIC_0028314,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028314.jpg,akiec,60.0,male,lower extremity,HAM_0006434
+ISIC_0031211,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031211.jpg,akiec,75.0,male,lower extremity,HAM_0004563
+ISIC_0027172,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027172.jpg,akiec,75.0,male,face,HAM_0003939
+ISIC_0026203,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026203.jpg,akiec,70.0,male,back,HAM_0003895
+ISIC_0029210,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029210.jpg,akiec,40.0,male,face,HAM_0004060
+ISIC_0026319,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0026319.jpg,akiec,80.0,male,chest,HAM_0003195
+ISIC_0025319,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025319.jpg,akiec,80.0,male,chest,HAM_0003195
+ISIC_0030549,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030549.jpg,akiec,50.0,male,upper extremity,HAM_0002094
+ISIC_0028076,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028076.jpg,akiec,60.0,male,lower extremity,HAM_0006434
+ISIC_0030142,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030142.jpg,akiec,60.0,male,lower extremity,HAM_0006434
+ISIC_0024468,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024468.jpg,akiec,75.0,male,neck,HAM_0006301
+ISIC_0031823,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031823.jpg,akiec,75.0,male,neck,HAM_0006301
+ISIC_0031927,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0031927.jpg,akiec,75.0,male,chest,HAM_0001277
+ISIC_0024539,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0024539.jpg,akiec,70.0,male,face,HAM_0002551
+ISIC_0027452,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0027452.jpg,akiec,70.0,male,upper extremity,HAM_0004033
+ISIC_0030825,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0030825.jpg,akiec,40.0,male,face,HAM_0004060
+ISIC_0028820,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0028820.jpg,akiec,80.0,male,lower extremity,HAM_0000931
+ISIC_0025368,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0025368.jpg,akiec,40.0,female,face,HAM_0004472
+ISIC_0029025,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_1/ISIC_0029025.jpg,akiec,70.0,male,face,HAM_0004384
+ISIC_0033084,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033084.jpg,akiec,40.0,male,abdomen,HAM_0002867
+ISIC_0033550,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033550.jpg,akiec,40.0,male,abdomen,HAM_0002867
+ISIC_0033536,/home/adi.yeltay/projects/multimodal_dl/src/data/HAM10000_images_part_2/ISIC_0033536.jpg,akiec,40.0,male,abdomen,HAM_0002867
